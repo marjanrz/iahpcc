@@ -234,7 +234,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	text-align:center;
 }
 
-.overlay {
+/* .overlay {
 	background:rgba(0, 0, 0, 0.4) url("../images/pattern.png") repeat;
 	position: absolute;
 	display: block;
@@ -242,7 +242,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	height: 100%;
 	top: 0px;
 	left: 0px;
-}
+} */
 
 section {
 	position:relative;
@@ -759,7 +759,7 @@ section {
 
 .home .flexslider .slides img {
 	background-position: center 0;
-	background-repeat: no-repeat;
+
 	background-size: cover;
 	width: 100%;
 }
@@ -872,7 +872,7 @@ section {
 	height: 100%;
 	color: #fff;
 }
-
+/* 
 .slider-overlay {
 	background:url("../images/pattern.png") repeat rgba(0, 0, 0, .4);
 	position: absolute;
@@ -882,7 +882,7 @@ section {
 	z-index: 100;
 	width: 100%;
 	height: 100%;
-}
+} */
 
 
 /*-----------------------------------------------------------------*/
@@ -998,11 +998,11 @@ html[xmlns] .slides {
 /*-----------------------------------------------------------------*/
 
 #facts {
-	background:url(../images/imagess//a4014168d4b53d930915d13355a21f61.jpg) no-repeat;
+	background:url(../images/img-iahpc/8.jpg) no-repeat;
 	padding: 150px 0px 100px;
 }
 #factss {
-	background:url(../images/imagess/d7e329582c8ff40640018655205ce9bd\ \(1\).jpg ) no-repeat;
+	background:url(../images/img-iahpc/8.jpg ) no-repeat;
 	padding: 150px 0px 100px;
 }
 .facts-box {
@@ -1298,7 +1298,7 @@ html[xmlns] .slides {
 
 /* ../images/parallax/timeline.jpg */
 #history {
-	background:url(/images/imagess/d3b3df1a87d1274e5f1cdcacbc30db46.jpg);
+	background:url(/images/img-iahpc/9.jpg);
 }
 
 ul.timeline {
@@ -1733,7 +1733,7 @@ ul.timeline {
 #skills {
 	text-align:center;
 	padding:100px 0px 0px;
-	background:url(../images/parallax/skills.jpg) no-repeat;
+	background:url(../images/img-iahpc/1.jpg) no-repeat;
 }
 
 .pie-chart-main {
@@ -2033,7 +2033,7 @@ ul.timeline {
 
 
 #testimonials {
-	background:url(../images/imagess/d7e329582c8ff40640018655205ce9bd.jpg) no-repeat;
+	background:url(../images/img-iahpc/110.jpg) no-repeat;
 }
 
 #testimonials {
@@ -2793,9 +2793,6 @@ li.comment ol.comment-sub {
 /*  Contact
 /*-----------------------------------------------------------------*/
 
-#contact {
-	background:url(../images/parallax/contact.jpg) no-repeat;
-}
 
 .contact-form {
 	display: block;
