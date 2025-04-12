@@ -135,10 +135,10 @@
                                   
                                       <!-- Dropdown content that contains additional buttons -->
                                       <div class="dropdown-content">
-                                        <button id="redirectButton2024">Go to 2024 Page</button>
+                                        <button id="redirectButton2024">DCHPC2024</button>
 
-                                        <button id="redirectButton2022">Go to 2022 Page</button>
-                                        <button id="redirectButton2022"> <a href="https://iahpc.ir/DCHPC2018">Go to 2018 Page</a></button>
+                                        <button id="redirectButton2022">DCHPC2022</button>
+                                        <button id="redirectButton2022"> <a href="https://iahpc.ir/DCHPC2018">DCHPC2018</a></button>
                                       </div>
                                     </div></li>
 								 <li class="active"> <a href="conferencenews.html" target="_blank">conference news</a> </li>
@@ -396,7 +396,8 @@ Camera Ready Due Date: 9<sup>th</sup> February 2024</p>
                             <h4>About DCHPC2018:</h4>
 <p>The biennial DCHPC conference series was launched in 2018, with its inaugural event, DCHPC2018, held at the University of Qom, Iran. The conference was co-supported by the DCS Scientific Group, the Informatics Society of Iran, Qom University, Universiti Putra Malaysia, and Auezov University (Kazakhstan).
 </p>
-<!-- <button id="redirectButton2024">Go to 2024 Page</button> -->
+ <button class="active" id="redirectButton2024"><a href="gallery2018.html" target="_blank">Gallery 2018</button> </a>
+
                         </li>
 
 
@@ -1074,7 +1075,55 @@ Camera Ready Due Date: 9<sup>th</sup> February 2024</p>
       
 
 
-
+      <section style="background-color: #fff; padding: 60px 20px;">
+        <div style="
+          max-width: 700px;
+          margin: auto;
+          background: #ffffff;
+          border-radius: 20px;
+          padding: 50px 40px;
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          font-family: 'Segoe UI', sans-serif;
+          border: 1px solid #e0e0e0;
+        ">
+          <h1 style="color: #2c3e50; font-size: 2.8rem; margin-bottom: 30px;">Countdown to Event</h1>
+          <div id="countdown" style="
+            font-size: 2.5rem;
+            color: #1565c0;
+            font-weight: bold;
+            letter-spacing: 1px;
+          "></div>
+        </div>
+      </section>
+      
+      <script>
+        const targetDate = new Date("2025-04-21T00:00:00").getTime();
+        const countdownElement = document.getElementById("countdown");
+      
+        const updateCountdown = () => {
+          const now = new Date().getTime();
+          const distance = targetDate - now;
+      
+          if (distance <= 0) {
+            countdownElement.innerHTML = "The event has started!";
+            clearInterval(timerInterval);
+            return;
+          }
+      
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+          countdownElement.innerHTML =
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        };
+      
+        const timerInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+      </script>
+      
   
    
  
@@ -1104,9 +1153,24 @@ Camera Ready Due Date: 9<sup>th</sup> February 2024</p>
         <ul>
           <li><a href="#cfp">Important Dates</a></li>
         </ul>
-        <div class="visitor-counter">
+        <div style="
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+        border: 1px solid #e0e0e0;
+      ">
+        <h2 style="color: #2c3e50; margin-bottom: 10px;">Visitor Counter</h2>
+        <p style="color: #666; margin-bottom: 20px; font-size: 15px;">You are visitor number:</p>
+        
+        <div class="visitor-counter" style="margin-top: 10px;">
           <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
         </div>
+      </div>
       </div>
   
     </div>

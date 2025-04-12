@@ -40,7 +40,7 @@ p {
 	font-family: "Open Sans", sans-serif;
 	font-size:14px;
 	line-height: 25px;
-	color: #727272;
+	color: #1f1c1c;
 	font-weight: 400;
 }
 a {
@@ -75,7 +75,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 	margin-bottom: 20px;
 	font-size: 15px;
 	line-height: 25px;
-	color: #484444;
+	color: #171414;
 	height: 46px;
 	width: 100%;
 	vertical-align: middle;
@@ -1298,7 +1298,7 @@ html[xmlns] .slides {
 
 /* ../images/parallax/timeline.jpg */
 #history {
-	background:url(/images/img-iahpc/9.jpg);
+	background:url(/images/imagess/2018/WhatsApp\ Image\ 2025-04-12\ at\ 10.59.26_d633eb97.jpg);
 }
 
 ul.timeline {
@@ -2955,4 +2955,143 @@ footer {
 }
 
 
+}
+.committee-section {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.committee-section h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.committee-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.committee-list li {
+    background-color: #fff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.committee-list li:hover {
+    background-color: #e2e2e2;
+    cursor: pointer;
+}
+#executive-committee-section {
+    padding: 60px 30px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.chairs-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a237e;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.chairs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chair-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chair-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.chair-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chair-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.chair-card span {
+    font-size: 0.85rem;
+    color: #777;
+}
+#scientific-program-committee-section {
+    padding: 60px 30px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.chairs-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a237e;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.chairs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chair-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chair-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.chair-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chair-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.chair-card span {
+    font-size: 0.85rem;
+    color: #777;
 }
