@@ -178,39 +178,131 @@
         </section>
           <!-- End Slider  -->
 
-        
-  <!--Start Features-->
-  <section  id="about" class="section">
-       <div class="container">
-           <div class="row">
-            <h1>Important Dates (Final Extension)</h1>
-            <p>Conference Date: 14<sup>th</sup>-15<sup>th</sup> May 2024<br />
-                Submission Date (Start): 22<sup>nd</sup> June 2023<br />
-                Submission Date  <strike>22<sup>nd</sup> November</strike> 15<sup>th</sup> December 2023<br>
-                Acceptance Notification: <strike><span class="link">15<sup>th</sup> January 2024</span></strike> <span class="">22<sup>nd</sup> January 2024</span><br />
-Early Bird Registration: 21<sup>st</sup> January 2024<br />
-Regular Registration (Deadline): 9<sup>th</sup> February 2024<br />
-Camera Ready Due Date: 9<sup>th</sup> February 2024</p>
-           
-            <div class="col-md-4">
-                  <div class="features-icon-box">
-                  
-                      
-                      <div class="features-info">
-                         
-                         
-                      </div>
-                  </div>
-              </div>
- 
-              
+          <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-              
+<section id="about" class="important-dates-section">
+  <div class="container">
+    <div class="important-dates-wrapper">
+      <div class="title-box">
+        <i class="fas fa-calendar-alt"></i>
+        <h2 class="animated-title">Important Dates (Final Extension)</h2>
+      </div>
+      
+      <div class="dates-box">
+        <p>
+          <span class="date-title">Conference Date:</span> 14<sup>th</sup>-15<sup>th</sup> May 2024<br />
+          <span class="date-title">Submission Date (Start):</span> 22<sup>nd</sup> June 2023<br />
+          <span class="date-title">Submission Date:</span> 
+          <span class="strike-box">
+            <strike>22<sup>nd</sup> November</strike>
+          </span> 
+          → 15<sup>th</sup> December 2023<br />
+          
+          <span class="date-title">Acceptance Notification:</span> 
+          <span class="strike-box">
+            <strike>15<sup>th</sup> January 2024</strike>
+          </span> 
+          → <span class="highlight">22<sup>nd</sup> January 2024</span><br />
 
-              
-           </div> <!-- /.row-->
-       </div> <!-- /.container-->
-  </section> 
+          <span class="date-title">Early Bird Registration:</span> 21<sup>st</sup> January 2024<br />
+          <span class="date-title">Regular Registration (Deadline):</span> 9<sup>th</sup> February 2024<br />
+          <span class="date-title">Camera Ready Due Date:</span> 9<sup>th</sup> February 2024
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .important-dates-section {
+    padding: 60px 20px;
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .important-dates-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .title-box i {
+    font-size: 26px;
+    color: #007bff;
+  }
+
+  .animated-title {
+    font-size: 28px;
+    color: #2c3e50;
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  .dates-box {
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .dates-box p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+  }
+
+  .highlight {
+    color: #007bff;
+    font-weight: 500;
+  }
+
+  .date-title {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  .strike-box {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #f1f1f1;
+    color: #999;
+    font-style: italic;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+
+  .strike-box strike {
+    text-decoration: line-through;
+    color: #999;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 600px) {
+    .animated-title {
+      font-size: 22px;
+    }
+
+    .dates-box {
+      padding: 20px;
+    }
+  }
+</style>
+
+
 
  
   <!-- Start Facts-->
@@ -223,11 +315,18 @@ Camera Ready Due Date: 9<sup>th</sup> February 2024</p>
   </section>
   <!--End Facts-->
 
-  <div class="conference-topics-wrapper">
-    <h1>Conference Topics:</h1>
-  
+  <!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<section class="conference-topics-section">
+  <div class="container">
+    <div class="title-wrapper">
+      <i class="fas fa-bullseye"></i>
+      <h2 class="animated-title">Conference Topics</h2>
+    </div>
+    
     <p>Topics of interest include, but are not limited to:</p>
-  
+
     <ul class="topics">
       <li>High Performance Computing</li>
       <li>Distributed Computing</li>
@@ -260,51 +359,106 @@ Camera Ready Due Date: 9<sup>th</sup> February 2024</p>
       <li>Software-defined Network</li>
     </ul>
   </div>
-  
-  <style>
-    .conference-topics-wrapper {
-      max-width: 800px;
-      margin : 60px auto;
-      padding: 40px;
-      background: #f9f9f9;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.08);
-      text-align: center;
-      font-family: "Segoe UI", sans-serif;
-      color: #333;
-    }
-  
-    .conference-topics-wrapper h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
-  
-    .conference-topics-wrapper p {
-      font-size: 16px;
-      margin-bottom: 25px;
-      color: #555;
-    }
-  
+</section>
+
+<style>
+  .conference-topics-section {
+    padding: 60px 20px;
+    background: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .conference-topics-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .title-wrapper:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    background: #f0faff;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .title-wrapper i {
+    font-size: 26px;
+    color: #3498db;
+    transition: all 0.3s ease;
+  }
+
+  .animated-title {
+    color: #2c3e50;
+    font-size: 28px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .conference-topics-section p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .topics {
+    list-style-type: disc;
+    text-align: left;
+    columns: 2;
+    column-gap: 40px;
+    padding-left: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  .topics li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    padding-left: 5px;
+  }
+
+  .topics li:hover {
+    color: #2c3e50;
+    transform: translateX(5px);
+    font-weight: 500;
+  }
+
+  @media (max-width: 600px) {
     .topics {
-      list-style-type: disc;
-      text-align: left;
-      columns: 2;
-      column-gap: 40px;
-      padding-left: 20px;
+      columns: 1;
     }
-  
-    .topics li {
-      margin-bottom: 10px;
-      font-size: 15px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
     }
-  
-    @media (max-width: 600px) {
-      .topics {
-        columns: 1;
-      }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-  </style>
+  }
+</style>
+
+
+
   <section id="factss" class="section parallax">
     <div class="overlay"></div>
        <div class="container">
@@ -340,41 +494,121 @@ Camera Ready Due Date: 9<sup>th</sup> February 2024</p>
             <div class="tab-arrow">
             </div>
           </li> -->
+         <!-- Font Awesome CDN (Only once in your project) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-          <section id="team" class="section">
-            <div class="container">
-                    <div class="row">
-                            
-                     <div class="title-box text-center">
-                        <h2 class="title">Paper Submission</h2>
-                        
-        <p>The authors are invited to submit full-length papers to DCHPC2024 through the&nbsp;Online Paper Submission Systems, respectively,&nbsp;by the submission deadline. The submission of a paper implies that the paper is original and unpublished (all authors must follow the <a class="link" href="https://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank">IEEE code of ethics</a>).</p>
-        
-        <p>A complete paper should be prepared using the IEEE template (template files for&nbsp;<a class="link" href="./files/Word Format.docx" target="_blank">MS Word</a>&nbsp;or&nbsp;<a class="link" href="/files/Latex Format.zip" target="_blank">LaTeX2e</a>), which is blind-submission review-formatted template.</p>
-        
-        <p><span style="color: rgba(114, 38, 38, 0.89);"><strong>Note</strong></span> that the DCHPC2024&nbsp;reviewing is <span style="color:  rgba(114, 38, 38, 0.89);">double blind</span>, in that authors do not know the names of the reviewers of their papers, and reviewers do 
-          <p> not know the names of the authors. Avoid providing information that may identify the authors in the acknowledgments and</p> 
-          in the supplemental material. Avoid providing links to websites that identify the authors.</p>
-        
-        <p>Papers must be submitted electronically, in PDF format, online(<a class="link" href="https://easyconf.ipm.ir/dchpc2024/" target="_blank">Login</a>)</p>
-        
-        <p>Enquiries on paper submissions can be addressed to the secretariat at <span style="color:  rgba(114, 38, 38, 0.89);">dchpc2024@gmail.com</span>&nbsp;or <span style="color:#008000;"><strong>+989100856079&nbsp;(SMS or Whatsapp)</strong></span></p>
-        
-        </div>
-        
-              
-                        
-                        <!-- End Team -->
-              </div>
-                    <!-- End Content -->
-          </section>
-          <!--End Team-->
-                        
-        </ul>
-       
-              
-            </div> <!--/.row-->  
-      </div> <!--/.container-->
+<section class="paper-submission">
+  <div class="container">
+    <!-- Title with Icon -->
+    <h2 class="animated-title">
+      <i class="fas fa-file-alt"></i> Paper Submission
+    </h2>
+    
+    <p>
+      Authors are invited to submit full-length papers to DCHPC2024 through the online paper submission system by the submission deadline. Submission implies that the paper is original and unpublished (<a href="https://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank">IEEE code of ethics</a>).
+    </p>
+    
+    <p>
+      A complete paper must be prepared using the IEEE template (available for <a href="#">MS Word</a> or <a href="#">LaTeX</a>) and follow the blind-submission review format.
+    </p>
+    
+    <p class="note">
+      Note: The DCHPC2024 review process is double-blind. Authors do not know the reviewers’ identities, and reviewers do not know the names of the authors.
+    </p>
+    
+    <p>
+      Please avoid including any author-identifying information in the acknowledgments or supplemental materials. Also avoid linking to websites that may reveal the authors’ identity.
+    </p>
+    
+    <p>
+      Papers must be submitted electronically in PDF format via the <a href="#">submission portal</a>.
+    </p>
+    
+    <p>
+      For enquiries, contact: <strong>dchpc2024@gmail.com</strong> or <strong style="color:#27ae60;">+989100856079</strong> <span style="font-style: italic;">(SMS or WhatsApp)</span>.
+    </p>
+  </div>
+</section>
+
+<!-- CSS styles -->
+<style>
+  .paper-submission {
+    padding: 60px 20px;
+    background: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .paper-submission .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* فقط یک سایه‌ی ظریف */
+  }
+
+  .animated-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .animated-title i {
+    margin-right: 10px; /* فاصله‌ای برای آیکون از تیتر */
+    color: #2980b9; /* تغییر رنگ آیکون به آبی */
+  }
+
+  .animated-title:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    background: #f0faff;
+    border-radius: 6px;
+    padding: 10px 20px;
+  }
+
+  .paper-submission p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .paper-submission a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+
+  .paper-submission a:hover {
+    text-decoration: underline;
+  }
+
+  .paper-submission .note {
+    color: #c0392b;
+    font-weight: bold;
+    background-color: #fceae8;
+    padding: 15px;
+    border-left: 5px solid #e74c3c;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+  }
+
+  .paper-submission .note:hover {
+    background-color: #f8d7da;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+  }
+</style>
+
+          
+            
   </section>
   <!--End Section-->
   
@@ -505,240 +739,288 @@ Camera Ready Due Date: 9<sup>th</sup> February 2024</p>
              </div>
 			
               
-
-    <!--Start Skills-->
-  <section  id="skills" class="section parallax">
-       <div class="overlay"></div>
-       <div class="container">
-           <div class="row">
-            <div class="box ws" id="ws" style="margin-left: 10%;">
-              
-       
-                <div class="box" id="reg">
-                    <h1 class="section-title">Registration & Fees</h1>
-                    <p><strong>Note:</strong> The accepted papers would not be considered for publication without registration. The detail of registration fees are as follows:</p>
-                  
-                    <!-- Normal Fees Table -->
-                    <div class="table-responsive" id="nodiscount">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>
-                              <button class="toggle-btn" onclick="discount()">Show Discounted Registration Fees</button>
-                            </th>
-                            <th>International Participants</th>
-                            <th>Iranian Participants (Before 9<sup>th</sup> Feb 2024)</th>
-                            <th>Iranian Participants (From 9<sup>th</sup> to 13<sup>th</sup> Feb 2024)</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>First Paper Submission</td>
-                            <td>120€</td>
-                            <td>10,000,000 IRR</td>
-                            <td>12,000,000 IRR</td>
-                          </tr>
-                          <tr>
-                            <td>Extra Paper Submission</td>
-                            <td>30€</td>
-                            <td>3,000,000 IRR</td>
-                            <td>4,500,000 IRR</td>
-                          </tr>
-                          <tr>
-                            <td>Paperless Participants</td>
-                            <td>30€</td>
-                            <td>3,000,000 IRR</td>
-                            <td>4,500,000 IRR</td>
-                          </tr>
-                          <tr>
-                            <td>Workshops (With Certificate)</td>
-                            <td>30€</td>
-                            <td>3,000,000 IRR</td>
-                            <td>4,500,000 IRR</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  
-                    <!-- Discounted Fees Table -->
-                    <div class="table-responsive" id="discount" style="display: none;">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>
-                              <button class="toggle-btn" onclick="noDiscount()">Show Normal Registration Fees</button>
-                            </th>
-                            <th>International Participants</th>
-                            <th>Iranian Participants (Before 9<sup>th</sup> Feb 2024)</th>
-                            <th>Iranian Participants (From 9<sup>th</sup> to 13<sup>th</sup> Feb 2024)</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>First Paper Submission</td>
-                            <td>96€</td>
-                            <td>8,000,000 IRR</td>
-                            <td>12,000,000 IRR</td>
-                          </tr>
-                          <tr>
-                            <td>Extra Paper Submission</td>
-                            <td>24€</td>
-                            <td>2,400,000 IRR</td>
-                            <td>4,500,000 IRR</td>
-                          </tr>
-                          <tr>
-                            <td>Paperless Participants</td>
-                            <td>24€</td>
-                            <td>2,400,000 IRR</td>
-                            <td>4,500,000 IRR</td>
-                          </tr>
-                          <tr>
-                            <td>Workshops (With Certificate)</td>
-                            <td>24€</td>
-                            <td>2,400,000 IRR</td>
-                            <td>4,500,000 IRR</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  
-                    <div class="note">
-                      <h4>Note:</h4>
-                      Participants who register before <strong>21<sup>st</sup> January 2024</strong> receive a 20% discount:
+             <section id="skills" class="section parallax">
+              <div class="overlay"></div>
+              <div class="container">
+                <div class="row">
+                  <div class="box ws" id="ws" style="margin-left: 10%;">
+                    
+                    <div class="box" id="reg">
+                      <h1 class="section-title">
+                        <i class="fas fa-clipboard-list"></i> Registration & Fees
+                      </h1>
+                      <p><strong>Note:</strong> The accepted papers would not be considered for publication without registration. The detail of registration fees are as follows:</p>
+                      
+                      <!-- Normal Fees Table -->
+                      <div class="table-responsive" id="nodiscount">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>
+                                <button class="toggle-btn" onclick="discount()">Show Discounted Registration Fees</button>
+                              </th>
+                              <th>International Participants</th>
+                              <th>Iranian Participants (Before 9<sup>th</sup> Feb 2024)</th>
+                              <th>Iranian Participants (From 9<sup>th</sup> to 13<sup>th</sup> Feb 2024)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>First Paper Submission</td>
+                              <td>120€</td>
+                              <td>10,000,000 IRR</td>
+                              <td>12,000,000 IRR</td>
+                            </tr>
+                            <tr>
+                              <td>Extra Paper Submission</td>
+                              <td>30€</td>
+                              <td>3,000,000 IRR</td>
+                              <td>4,500,000 IRR</td>
+                            </tr>
+                            <tr>
+                              <td>Paperless Participants</td>
+                              <td>30€</td>
+                              <td>3,000,000 IRR</td>
+                              <td>4,500,000 IRR</td>
+                            </tr>
+                            <tr>
+                              <td>Workshops (With Certificate)</td>
+                              <td>30€</td>
+                              <td>3,000,000 IRR</td>
+                              <td>4,500,000 IRR</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                      <!-- Discounted Fees Table -->
+                      <div class="table-responsive" id="discount" style="display: none;">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>
+                                <button class="toggle-btn" onclick="noDiscount()">Show Normal Registration Fees</button>
+                              </th>
+                              <th>International Participants</th>
+                              <th>Iranian Participants (Before 9<sup>th</sup> Feb 2024)</th>
+                              <th>Iranian Participants (From 9<sup>th</sup> to 13<sup>th</sup> Feb 2024)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>First Paper Submission</td>
+                              <td>96€</td>
+                              <td>8,000,000 IRR</td>
+                              <td>12,000,000 IRR</td>
+                            </tr>
+                            <tr>
+                              <td>Extra Paper Submission</td>
+                              <td>24€</td>
+                              <td>2,400,000 IRR</td>
+                              <td>4,500,000 IRR</td>
+                            </tr>
+                            <tr>
+                              <td>Paperless Participants</td>
+                              <td>24€</td>
+                              <td>2,400,000 IRR</td>
+                              <td>4,500,000 IRR</td>
+                            </tr>
+                            <tr>
+                              <td>Workshops (With Certificate)</td>
+                              <td>24€</td>
+                              <td>2,400,000 IRR</td>
+                              <td>4,500,000 IRR</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                      <div class="note">
+                        <h4>Note:</h4>
+                        Participants who register before <strong>21<sup>st</sup> January 2024</strong> receive a 20% discount:
+                        <ul>
+                          <li><a href="http://www.isi.org.ir/page/27/اشتراک-ها" target="_blank">Members of Informatics Society of Iran</a></li>
+                          <li><a href="https://cs.ipm.ac.ir/" target="_blank">Authors from IPM</a></li>
+                          <li><a href="https://www.ieee.org/membership/index.html" target="_blank">IEEE Members</a></li>
+                          <li><a href="https://www.iahpc.ir/Committee2024" target="_blank">DCHPC2024 Committee</a></li>
+                          <li>Participants from Iraq, Afghanistan, Kazakhstan, Tajikistan, Lebanon, and Pakistan</li>
+                        </ul>
+                        <p>Discounts apply until <strong>February 9, 2024</strong>.</p>
+                      </div>
+                      
+                      <h1 class="section-title">
+                        <i class="fas fa-credit-card"></i> Registration and Payment
+                      </h1>
                       <ul>
-                        <li><a href="http://www.isi.org.ir/page/27/اشتراک-ها" target="_blank">Members of Informatics Society of Iran</a></li>
-                        <li><a href="https://cs.ipm.ac.ir/" target="_blank">Authors from IPM</a></li>
-                        <li><a href="https://www.ieee.org/membership/index.html" target="_blank">IEEE Members</a></li>
-                        <li><a href="https://www.iahpc.ir/Committee2024" target="_blank">DCHPC2024 Committee</a></li>
-                        <li>Participants from Iraq, Afghanistan, Kazakhstan, Tajikistan, Lebanon, and Pakistan</li>
+                        <li>Iranian participants: Register via <a href="/DCHPC2024/files/fa-form.docx" target="_blank">this link</a> and pay via <a href="https://www.isi.org.ir/account/register?returnurl=%2Fpanel%2FPanelsubscription%2FPackagesList" target="_blank">this link</a>.</li>
+                        <li>International participants: Register via <a href="/DCHPC2024/files/eng-form.docx" target="_blank">this link</a>. Payment is on-desk.</li>
                       </ul>
-                      <p>Discounts apply until <strong>February 9, 2024</strong>.</p>
+                      
+                      <p><strong>Note:</strong> Fees are for online participation. In-person participation may vary.</p>
                     </div>
-                  
-                    <h1 class="section-title">Registration and Payment</h1>
-                    <ul>
-                      <li>Iranian participants: Register via <a href="/DCHPC2024/files/fa-form.docx" target="_blank">this link</a> and pay via <a href="https://www.isi.org.ir/account/register?returnurl=%2Fpanel%2FPanelsubscription%2FPackagesList" target="_blank">this link</a>.</li>
-                      <li>International participants: Register via <a href="/DCHPC2024/files/eng-form.docx" target="_blank">this link</a>. Payment is on-desk.</li>
-                    </ul>
-                  
-                    <p><strong>Note:</strong> Fees are for online participation. In-person participation may vary.</p>
+                    
                   </div>
-                  
-                  <style>
-                    .box {
-                      max-width: 1000px;
-                      margin: 50px auto;
-                      padding: 30px;
-                      background: #fdfdfd;
-                      border-radius: 12px;
-                      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-                      font-family: "Segoe UI", sans-serif;
-                      color: #333;
-                    }
-                  
-                    .section-title {
-                      text-align: center;
-                      font-size: 26px;
-                      margin-bottom: 20px;
-                      color: #2c3e50;
-                    }
-                  
-                    .box p {
-                      font-size: 15px;
-                      line-height: 1.7;
-                    }
-                  
-                    .box ul {
-                      margin-top: 10px;
-                      padding-left: 20px;
-                    }
-                  
-                    .box ul li {
-                      margin-bottom: 8px;
-                    }
-                  
-                    .toggle-btn {
-                      background: rgba(114, 38, 38, 0.89);
-                      color: white;
-                      padding: 8px 16px;
-                      border: none;
-                      font-size: 14px;
-                      border-radius: 6px;
-                      cursor: pointer;
-                    }
-                  
-                    .toggle-btn:hover {
-                      background-color: #831e1e;
-                    }
-                  
-                    .table-responsive {
-                      overflow-x: auto;
-                      margin: 20px 0;
-                    }
-                  
-                    table {
-                      width: 100%;
-                      border-collapse: collapse;
-                      min-width: 700px;
-                    }
-                  
-                    table th, table td {
-                      border: 1px solid #ccc;
-                      padding: 12px;
-                      text-align: center;
-                      font-size: 14px;
-                    }
-                  
-                    table thead {
-                      background-color: #f2f2f2;
-                    }
-                  
-                    .note {
-                      margin-top: 30px;
-                      padding: 20px;
-                      background-color: #fffbe6;
-                      border-left: 5px solid #ffbf00;
-                      border-radius: 6px;
-                    }
-                  
-                    .note h4 {
-                      margin-top: 0;
-                      color: #9c7200;
-                    }
-                  
-                    a {
-                      color: #0056b3;
-                      text-decoration: none;
-                    }
-                  
-                    a:hover {
-                      text-decoration: underline;
-                    }
-                  
-                    @media (max-width: 768px) {
-                      table {
-                        min-width: 100%;
-                      }
-                  
-                      .toggle-btn {
-                        font-size: 13px;
-                      }
-                    }
-                  </style>
-                  
-                  <script>
-                    function discount() {
-                      document.getElementById('nodiscount').style.display = 'none';
-                      document.getElementById('discount').style.display = 'block';
-                    }
-                  
-                    function noDiscount() {
-                      document.getElementById('discount').style.display = 'none';
-                      document.getElementById('nodiscount').style.display = 'block';
-                    }
-                  </script>
-               </section> 
-              <!--End Services-->
+                </div>
+              </div>
+            </section>
+            
+            <!-- CSS styles -->
+            <style>
+              .box {
+                max-width: 1000px;
+                margin: 50px auto;
+                padding: 30px;
+                background: #fdfdfd;
+                border-radius: 12px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.05);
+                font-family: "Segoe UI", sans-serif;
+                color: #333;
+                animation: fadeIn 1s ease-out;
+              }
+            
+              @keyframes fadeIn {
+                0% {
+                  opacity: 0;
+                  transform: translateY(30px);
+                }
+                100% {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }
+            
+              .section-title {
+                text-align: center;
+                font-size: 26px;
+                margin-bottom: 20px;
+                color: #2c3e50;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            
+              .section-title i {
+                margin-right: 10px;
+                color: #2980b9;
+              }
+            
+              .box p {
+                font-size: 15px;
+                line-height: 1.7;
+              }
+            
+              .box ul {
+                margin-top: 10px;
+                padding-left: 20px;
+              }
+            
+              .box ul li {
+                margin-bottom: 8px;
+              }
+            
+              .toggle-btn {
+                background: #2980b9;
+                color: white;
+                padding: 8px 16px;
+                border: none;
+                font-size: 14px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+              }
+            
+              .toggle-btn:hover {
+                background-color: #3498db;
+              }
+            
+              .table-responsive {
+                overflow-x: auto;
+                margin: 20px 0;
+                animation: slideIn 1s ease-out;
+              }
+            
+              @keyframes slideIn {
+                0% {
+                  transform: translateX(-100%);
+                }
+                100% {
+                  transform: translateX(0);
+                }
+              }
+            
+              table {
+                width: 100%;
+                border-collapse: collapse;
+                min-width: 700px;
+              }
+            
+              table th, table td {
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: center;
+                font-size: 14px;
+                background-color: #f9f9f9;
+                transition: background-color 0.3s ease;
+              }
+            
+              table thead {
+                background-color: #f2f2f2;
+              }
+            
+              table td:hover {
+                background-color: #ecf0f1;
+              }
+            
+              .note {
+                margin-top: 30px;
+                padding: 20px;
+                background-color: #fffbe6;
+                border-left: 5px solid #ffbf00;
+                border-radius: 6px;
+              }
+            
+              .note h4 {
+                margin-top: 0;
+                color: #9c7200;
+              }
+            
+              a {
+                color: #0056b3;
+                text-decoration: none;
+              }
+            
+              a:hover {
+                text-decoration: underline;
+              }
+            
+              @media (max-width: 768px) {
+                table {
+                  min-width: 100%;
+                }
+            
+                .toggle-btn {
+                  font-size: 13px;
+                }
+              }
+            </style>
+            
+            <!-- Font Awesome CDN (For Icons) -->
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            
+            <!-- JavaScript for toggling tables -->
+            <script>
+              function discount() {
+                document.getElementById('nodiscount').style.display = 'none';
+                document.getElementById('discount').style.display = 'block';
+              }
+            
+              function noDiscount() {
+                document.getElementById('discount').style.display = 'none';
+                document.getElementById('nodiscount').style.display = 'block';
+              }
+            </script>
+            
             
               
                
