@@ -1298,7 +1298,7 @@ html[xmlns] .slides {
 
 /* ../images/parallax/timeline.jpg */
 #history {
-	background:url(/iahpcc/history.jpg);
+	background:url(./iahpcc/history.jpg);
 }
 
 ul.timeline {
