@@ -1696,10 +1696,11 @@ ul.timeline {
 /*-----------------------------------------------------------------*/
 
 #skills {
-	text-align:center;
-	padding:10px 0px 0px;
-	background:url(../iahpcc/1111.jpg) ;
+	text-align: center;
+	padding: 10px 0px 0px;
+	background: url('/iahpcc/1111.jpg');
 }
+
 
 
 
