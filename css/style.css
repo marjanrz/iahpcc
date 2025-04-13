@@ -1288,10 +1288,11 @@ html[xmlns] .slides {
 
 /* ../images/parallax/timeline.jpg */
 #history {
-	background: url(./iahpcc/history.jpg) no-repeat center center;
+	background: url('history.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed; 
 }
+
 
 ul.timeline {
 	margin: 40px auto 0;
