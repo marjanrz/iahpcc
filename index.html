@@ -115,17 +115,24 @@
 							<div class="clear-toggle"></div>
 							<div id="main-menu" class="collapse scroll navbar-right">
                 <ul class="custom-navbar">
-  <li><a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a></li>
-  <li><a href="committee.html">Committee</a></li>
-  <li><a href="keynote.html" target="_blank">Keynote</a></li>
-
-  <!-- History Dropdown کلیک‌شو -->
+  <li><a href="#" onclick="navigateTo('committee.html')">Committee</a></li>
+  <li><a href="#" onclick="navigateTo('keynote.html')">Keynote</a></li>
+  <li><a href="#" onclick="navigateTo('conferencenews.html')">Conference News</a></li>
+  <li><a href="#" onclick="navigateTo('farsi.html')">فارسی</a></li>
+    
+   <li> <a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a></li>
  
+  <!-- History Dropdown Menu -->
+  <li class="history-dropdown">
+    <div class="history-toggle">History</div>
+    <div class="history-content">
+      <button onclick="navigateTo('2024.html')">DCHPC 2024</button>
+      <button onclick="navigateTo('2022.html')">DCHPC 2022</button>
+      <a href="https://iahpc.ir/DCHPC2018" target="_blank">DCHPC 2018</a>
+    </div>
+  </li>
 
-  <li><a href="conferencenews.html" target="_blank">Conference News</a></li>
   <li><a href="#FAQ">FAQ</a></li>
-  <li><a href="farsi.html" target="_blank">فارسی</a></li>
-  
 </ul>
 
 
@@ -134,17 +141,35 @@
 			</header>
     <!--End Navigation-->
 
-      
+   
+
         <!-- Start Slider  -->
         <section id="home" class="home">
-  <!-- لایه تیره روی بک‌گراند برای خوانایی بیشتر -->
-  <div class="slider-overlay"></div>
+         
 
-  <!-- بک‌گراند با تصویر شب تهران -->
-  <div class="slider-background" style="background-image: url('background.png');"></div>
+ 
+  <div class="slider-backgroundd" style="background-image: url('./iahpcc/background1.png');"></div>
+
+
 
 </section>
-
+ <div class="sponsor-containerr">
+    <div class="sponsor-card">
+      <a href="http://www.isi.org.ir/" target="_blank">
+        <img src="images/imagess/images/logo2.png" alt="ISI Logo 2" />
+      </a>
+    </div>
+    <div class="sponsor-card">
+      <a href="http://www.isi.org.ir/" target="_blank">
+        <img src="images/img/IPMLogo.jpg" alt="IPM Sponsor" />
+      </a>
+    </div>
+    <div class="sponsor-card">
+      <a href="https://www.isi.org.ir/front/posts/show/832/" target="_blank">
+        <img src="images/imagess/images/logo.png" alt="ISI Sponsor" />
+      </a>
+    </div>
+  </div>
           <!-- End Slider  -->
 
           <!-- Font Awesome CDN -->
@@ -1793,7 +1818,17 @@ h1.section-title + ul {
         });
       </script> -->
 
- 
+      <script>
+        function navigateTo(path) {
+          window.location.href = path;
+        }
+      </script>
+      <script>
+        function navigateTo(url) {
+          window.location.href = url;
+        }
+      </script>
+      
  
  
     </body>
