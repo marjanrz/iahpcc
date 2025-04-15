@@ -3317,10 +3317,10 @@ footer {
 	padding-left: 15px;
 	line-height: 0; /* جلوگیری از فضای بین خطی */
 	border-radius: 15px; /* محو شدن حاشیه‌ها */
-	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* سایه زیبای تصویر */
-}
-
-.sponsor-containerr div {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* سایه زیبای تصویر */
+  }
+  
+  .sponsor-containerr div {
 	width: 120px;
 	height: 100px;
 	padding: 0;
@@ -3330,32 +3330,19 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: all 0.3s ease-in-out; /* اضافه کردن انتقال نرم */
-}
-
-.sponsor-containerr .no-bg {
+  }
+  
+  .sponsor-containerr .no-bg {
 	background: none !important;
-}
-
-.sponsor-containerr img {
+  }
+  
+  .sponsor-containerr img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
 	display: block;
 	vertical-align: middle;
-	transition: transform 0.3s ease, box-shadow 0.3s ease; /* انتقال برای حرکت و سایه */
-}
-
-/* هاور روی دکمه */
-.sponsor-containerr div:hover {
-	transform: scale(1.1) rotate(-5deg); /* بزرگ شدن و چرخش تصویر */
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* سایه بیشتر برای عمق دادن */
-}
-
-.sponsor-containerr img:hover {
-	transform: scale(1.1) rotate(-5deg); /* بزرگتر و چرخش تصویر */
-}
-
+  }
   
   
   
