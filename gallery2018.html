@@ -116,7 +116,7 @@
     <div class="history-toggle">History</div>
     <div class="history-content"href="2024.html">
    
-      <div class="history-content"href="2024.html">
+      
         <button onclick="window.location.href='index.html'">DCHPC 2026</button>
         <button onclick="window.location.href='2024.html'">DCHPC 2024</button>
           <button onclick="window.location.href='2022.html'">DCHPC 2022</button>
@@ -668,10 +668,7 @@
     margin-bottom: 15px;
     border-bottom: 2px solid #444;
     padding-bottom: 8px;
-  
   }
-
-  
 
   .footer-column ul {
     list-style: none;
@@ -682,30 +679,27 @@
     margin-bottom: 12px;
     font-size: 15px;
   }
-  .footer-column a:hover {
-color: #fff; 
-transform: scale(1.05);
-transition: transform 0.3s ease, color 0.3s;
-}
-  .footer-column a:hover i {
-color: #3498db;
-}
+
+ 
+  .footer-column a {
+    color: #f4f5f4; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
   .footer-column a i {
-color: #28d47c; 
-transition: color 0.3s ease;
-}
-  .footer-column a:hover i {
-color: #3498db; 
-}
-.footer-column a:hover {
-color: #fff; 
-transform: scale(1.05);
-transition: transform 0.3s ease, color 0.3s;
-}
-  /* .footer-column i {
     color: #28d47c;
-    font-size: 17px;
-  } */
+    transition: color 0.3s ease;
+  }
+
+  .footer-column a:hover {
+    color: #3498db; 
+    transform: scale(1.05);
+  }
+
+  .footer-column a:hover i {
+    color: #3498db;
+  }
 
   .footer-bottom {
     text-align: center;
@@ -716,7 +710,7 @@ transition: transform 0.3s ease, color 0.3s;
     margin-top: 40px;
   }
 
-  /* Visitor Box Style */
+  
   .visitor-box {
     background: linear-gradient(to right, #ffffff, #f7f7f7);
     color: #333;
@@ -744,7 +738,7 @@ transition: transform 0.3s ease, color 0.3s;
     gap: 10px;
   }
 
-  /* Fade-In Animation */
+ 
   .fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
@@ -767,21 +761,23 @@ transition: transform 0.3s ease, color 0.3s;
   }
 
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  /* Responsive */
+  
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;
       align-items: center;
     }
 
-    .footer-column a i {
-color: #ccc; 
-transition: color 0.3s ease;
-}
     .visitor-box {
       width: 90%;
       margin: 20px auto 0;

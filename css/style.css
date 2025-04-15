@@ -1319,9 +1319,9 @@ html[xmlns] .slides {
 	list-style: none;
   }
   
-  /* ✅ سبک جدید برای باکس‌ها با پس‌زمینه روشن */
+ 
   .timeline-item {
-	background: rgba(255, 255, 255, 0.85); /* روشن و خوانا */
+	background: rgba(255, 255, 255, 0.85); 
 	color: #000;
 	border-left: 4px solid #c49b23;
 	margin-bottom: 40px;
@@ -1331,13 +1331,13 @@ html[xmlns] .slides {
 	text-align: left;
   }
   
-  /* ✅ افکت hover جدید */
+
   .timeline-item:hover {
 	transform: translateY(-5px);
 	background: rgba(255, 255, 255, 0.95);
   }
   
-  /* ✅ فقط باکس 2018 سمت چپ باشه */
+ 
   .timeline-right {
 	text-align: left;
 	direction: ltr;
@@ -1345,7 +1345,7 @@ html[xmlns] .slides {
 	border-right: none;
   }
   
-  /* ✅ سایر استایل‌ها */
+ 
   .timeline-item h4 {
 	font-size: 22px;
 	margin-bottom: 10px;
@@ -2887,7 +2887,7 @@ footer {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed; /* پارالاکس دسکتاپ */
+	background-attachment: fixed;
 	z-index: 1;
   }
   
@@ -2897,7 +2897,7 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.4); /* شفافیت دلخواه */
+	background: rgba(0, 0, 0, 0.4); 
 	z-index: 2;
   }
   
@@ -2908,22 +2908,22 @@ footer {
   }
   .custom-navbar {
 	list-style: none;
-	padding: 20px 30px; /* فاصله از بالا و راست */
+	padding: 20px 30px;
 	margin: 0;
 	display: flex;
-	flex-direction: column; /* آیتم‌ها عمودی زیر هم */
+	flex-direction: column; 
 	align-items: flex-start;
   }
   
   .custom-navbar li {
-	margin-bottom: 12px; /* فاصله بین آیتم‌ها */
+	margin-bottom: 12px; 
   }
   
   .custom-navbar li a {
 	font-family: 'Besley', serif;
 	font-size: 14px;
-	font-weight: 300; /* فونت ظریف‌تر */
-	text-transform: none; /* همه حروف کوچیک */
+	font-weight: 300;
+	text-transform: none;
 	color: #2c3e50;
 	text-decoration: none;
 	transition: all 0.3s ease;
@@ -2978,8 +2978,8 @@ footer {
   }
   .logo-section {
 	position: absolute;
-	top: 40px; /* فاصله از بالا */
-	left: -100px; /* فاصله از چپ */
+	top: 40px; 
+	left: -100px; 
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -2991,23 +2991,23 @@ footer {
   }
   
   .main-logo {
-	width: 200px; /* سایز اصلی */
+	width: 200px; 
 	height: auto;
   }
   
   .small-logos {
 	display: flex;
-	gap: 1px; /* فاصله بین لوگوهای کوچیک */
+	gap: 1px;
   }
   
   .small-logo {
-	width: 100px;  /* سایز یکسان برای هر دو لوگو */
+	width: 100px;  
   height: 50px;
-  transition: transform 0.3s ease; /* انیمیشن موقع هاور */
+  transition: transform 0.3s ease; 
   }
   
   .small-logo:hover {
-	transform: scale(1.05);  /* بزرگ شدن در زمان هاور */
+	transform: scale(1.05); 
   }
   .section.parallax {
   background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80');
@@ -3230,7 +3230,7 @@ footer {
 	filter: brightness(1.2);
   }
   
-  /* ریسپانسیو برای موبایل */
+  
   @media (max-width: 768px) {
 	.sponsors-grid {
 	  flex-direction: column;
@@ -3301,11 +3301,11 @@ footer {
   }
   .slider-backgroundd {
 	background-image: url('./iahpcc/background1.png');
-	background-size: cover; /* تصویر را به طور کامل پوشش می‌دهد */
-	background-position: center center; /* تصویر در مرکز قرار می‌گیرد */
-	background-repeat: no-repeat; /* تصویر تکرار نمی‌شود */
-	width: 100%; /* عرض به اندازه عرض صفحه */
-	height: 100vh; /* ارتفاع به اندازه ارتفاع صفحه */
+	background-size: cover; 
+	background-position: center center;
+	background-repeat: no-repeat; 
+	width: 100%; 
+	height: 100vh; 
   }
   .sponsor-containerr {
 	display: flex;
@@ -3315,9 +3315,9 @@ footer {
 	top: 20px;
 	left: 0;
 	padding-left: 15px;
-	line-height: 0; /* جلوگیری از فضای بین خطی */
-	border-radius: 15px; /* محو شدن حاشیه‌ها */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* سایه زیبای تصویر */
+	line-height: 0; 
+	border-radius: 15px; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
   }
   
   .sponsor-containerr div {
@@ -3348,21 +3348,21 @@ footer {
   
   
   .sponsor-card img {
-	max-width: 80%; /* حداکثر عرض برای جلوگیری از کشیدگی */
+	max-width: 80%; 
 	height: auto;
-	max-height: 30px; /* حداکثر ارتفاع برای لوگوها */
-	object-fit: contain; /* از کشیدگی لوگو جلوگیری می‌کند */
+	max-height: 30px; 
+	object-fit: contain; 
   }
 
   
   .sponsor-card {
-	margin-bottom: 5px;  /* فاصله بین هر لوگو */
+	margin-bottom: 5px;  
   }
   
   .sponsor-card img {
-	max-width: 100%; /* عرض لوگوها به صورت اتوماتیک در اندازه باکس */
-	max-height: 60px; /* حداکثر ارتفاع برای لوگوها */
-	object-fit: contain; /* از کشیدگی جلوگیری می‌کند */
+	max-width: 100%;
+	max-height: 60px; 
+	object-fit: contain; 
   }
 	
 
@@ -3406,7 +3406,7 @@ footer {
 	text-shadow: 1px 1px 6px rgba(19, 0, 0, 0.861);
   }
   
-  /* استایل دکمه‌ها */
+ 
   .hero-buttons {
 	display: flex;
 	justify-content: center;
@@ -3430,11 +3430,11 @@ footer {
   .hero-btn:hover {
 	background-color: #dcb952;
 	color: white;
-	text-decoration: none; /* جلوگیری از خط زیر متن */
+	text-decoration: none; 
   }
   
   .hero-btn.secondary {
-	/* حالا استایل جدا نیاز نیست چون هر دو یکی شدن */
+	
   }
   
 
