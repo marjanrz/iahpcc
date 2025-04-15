@@ -642,7 +642,7 @@ section {
 }
 
 .menu-bg {
-	background:#202020;
+	background:#131212;
 }
 
 #main-menu ul {
@@ -668,7 +668,7 @@ section {
 }
 
 #main-menu ul li a:hover {
-	color:#FFF;
+	color:#870a0a;
 }
 
 #main-menu ul.nav>li>a:hover, #main-menu ul.nav>li>a:focus {
@@ -983,13 +983,13 @@ html[xmlns] .slides {
 /*-----------------------------------------------------------------*/
 /* Fun Facs
 /*-----------------------------------------------------------------*/
-
+/* ../images/img-iahpc/8.jpg */
 #facts {
-	background:url(../images/img-iahpc/8.jpg) no-repeat;
+	background:url(../images/imagess/06789.jpg) no-repeat;
 	padding: 150px 0px 100px;
 }
 #factss {
-	background:url(../images/img-iahpc/8.jpg ) no-repeat;
+	background:url(../images/imagess/06789.jpg ) no-repeat;
 	padding: 150px 0px 100px;
 }
 .facts-box {
@@ -1287,152 +1287,105 @@ html[xmlns] .slides {
 
 /* ../images/parallax/timeline.jpg */
 #history {
-	background: url('history.jpg') no-repeat center center;
+	position: relative;
+	padding: 80px 0;
+	background: url('/images/imagess/112.png') no-repeat center center;
 	background-size: cover;
-	background-attachment: fixed; 
-}
+	color: #fff;
+  }
+  
 
-
-ul.timeline {
-	margin: 40px auto 0;
-	width: 100%;
-	background: url(../images/timeline-bg.jpg) center center repeat-y;
-	height: auto;
+  #history .container {
 	position: relative;
-	padding: 0 0 80px;
-	
-}
-
-.timeline .year {
-	background: #FFFFFF;
-	clear: both;
-	color: #3C3D3D;
-	font-size: 18px;
-	font-weight: 600;
-	height: auto;
-	margin: 31px auto;
+	z-index: 2;
+  }
+  
+  .history-title {
+	font-size: 38px;
+	font-weight: bold;
+	margin-bottom: 60px;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #FFD700;
+  }
+  
+  /* ==== TIMELINE === */
+  .timeline {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 900px;
+	list-style: none;
+  }
+  
+  /* ✅ سبک جدید برای باکس‌ها با پس‌زمینه روشن */
+  .timeline-item {
+	background: rgba(255, 255, 255, 0.85); /* روشن و خوانا */
+	color: #000;
+	border-left: 4px solid #FFD700;
+	margin-bottom: 40px;
+	padding: 25px 30px;
+	border-radius: 12px;
+	transition: transform 0.3s ease, background 0.3s ease;
+	text-align: left;
+  }
+  
+  /* ✅ افکت hover جدید */
+  .timeline-item:hover {
+	transform: translateY(-5px);
+	background: rgba(255, 255, 255, 0.95);
+  }
+  
+  /* ✅ فقط باکس 2018 سمت چپ باشه */
+  .timeline-right {
+	text-align: left;
+	direction: ltr;
+	border-left: 4px solid #FFD700;
+	border-right: none;
+  }
+  
+  /* ✅ سایر استایل‌ها */
+  .timeline-item h4 {
+	font-size: 22px;
+	margin-bottom: 10px;
+	color: #FFD700;
+  }
+  
+  .timeline-item p {
+	line-height: 1.8;
+	color: #000;
+  }
+  
+  .year {
+	font-size: 26px;
+	font-weight: bold;
 	text-align: center;
-	width: 75px;
-	height:75px;
-	border-radius:50%;
-	line-height:72px;
-	left: -35px;
-	border: 3px solid #919191;
-	position: relative;
-	top: -5px;
-	left: auto;
-}
-
-.timeline .timeline-item {
-	float: left;
-	padding: 20px;
-	width: 47.5%;
-	background: rgba(0, 0, 0, .7);
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
-	margin: 10px 0;
-	position: relative;
-	z-index: 550;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-.timeline .timeline-item h4 {
-	color: #FFF;
-	font-size: 15px;
-}
-
-.timeline .timeline-item p {
-	color: #FFF;
-}
-
-.timeline .timeline-item span {
-	font-size: 13px;
-	font-weight:600;
-	text-transform: capitalize;
-
-	color: #FFF;
-}
-
-.timeline .timeline-item:after {
-	content: '';
-	position: absolute;
-	right: -6.8%;
-	display: block;
-	width: 18px;
-	height: 18px;
-	background: #FFF;
-	border: 2px solid #FFF;
-	border-radius: 100px;
-	top: 18px;
-	z-index: 20;
-}
-
- .timeline .timeline-item:nth-of-type(2n):before {
-	 border-top: 10px solid rgba(0, 0, 0, 0);
-	 border-bottom: 10px solid rgba(0, 0, 0, 0);
-	 border-left: 10px solid rgba(0, 0, 0, 0);
-	 border-right: 10px solid rgba(0, 0, 0, 0.7);
-	 content: "";
-	 right: 100%;
-	 position: absolute;
-	 -webkit-transition: all 0.5s;
-	 -moz-transition: all 0.5s;
-	 transition: all 0.5s;
-}
-
-.timeline .timeline-item:before {
-	border-top: 10px solid rgba(0, 0, 0, 0);
-	border-bottom: 10px solid rgba(0, 0, 0, 0);
-	border-right: 10px solid rgba(0, 0, 0, 0);
-	border-left: 10px solid rgba(0, 0, 0, 0.7);
-	content: "";
-	right: -20px;
-	position: absolute;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
- .timeline .timeline-item:nth-of-type(2n) {
- float: right;
- clear: right;
-}
-
-.timeline .year + .timeline-item {
-	margin-top: -20px;
-}
-
- .timeline .timeline-item:nth-of-type(2n):after {
- left: -6.8%;
-}
-
-.timeline .end-icon:before {
-	clear:both;
-}
-
-.timeline .end-icon {
-	height: 64px;
-	border: 3px solid #919191;
-	border-radius: 300px;
-	background: #FFF;
-	color: #868586;
-	font-size: 24px;
-	bottom: 0px;
-	left: 50%;
-	margin-left: -32px;
-	text-align: center;
-	padding: 19px 0px;
-	clear: both;
-	position: absolute;
-	width: 64px;
-}
-
-
+	margin: 50px 0 20px;
+	color: #FFD700;
+  }
+  
+  .btn-gallery {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #FFD700;
+	color: #000;
+	font-weight: bold;
+	border-radius: 8px;
+	text-decoration: none;
+	margin-top: 15px;
+	transition: background 0.3s, transform 0.3s;
+  }
+  
+  .btn-gallery:hover {
+	background-color: #e6c200;
+	transform: scale(1.05);
+  }
+  
+  .link {
+	color: #5e500ae4;
+	text-decoration: underline;
+  }
+  
 
 /*-----------------------------------------------------------------*/
 /* Works
@@ -3365,7 +3318,7 @@ footer {
   .sponsor-cardd img {
 	max-width: 80%; /* حداکثر عرض برای جلوگیری از کشیدگی */
 	height: auto;
-	max-height: 20px; /* حداکثر ارتفاع برای لوگوها */
+	max-height: 30px; /* حداکثر ارتفاع برای لوگوها */
 	object-fit: contain; /* از کشیدگی لوگو جلوگیری می‌کند */
   }
   .sponsor-container {
@@ -3374,7 +3327,7 @@ footer {
 	justify-content: flex-start; /* شروع از بالای بخش */
 	align-items: flex-start; /* چسبیدن به سمت چپ */
 	position: fixed;  /* باعث ثابت شدن لوگوها در صفحه */
-	top: 20%;  /* فاصله از بالا */
+	top: 10%;  /* فاصله از بالا */
 	left: 20px;  /* فاصله از سمت چپ */
 	gap: 15px;  /* فاصله بین لوگوها */
 	z-index: 1000;  /* تنظیم لایه برای اینکه روی سایر محتوا قرار بگیرند */
@@ -3452,7 +3405,75 @@ footer {
 
 
 
-
+  .slider-backgroundd {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+  }
+  
+  .overlay-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	max-width: 90%;
+  }
+  
+  .overlay-content h1 {
+	font-family: 'Besley', serif;
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 8px rgba(10, 4, 4, 0.7);
+  }
+  
+  .overlay-content p {
+	font-family: 'Besley', serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.861);
+  }
+  
+  /* استایل دکمه‌ها */
+  .hero-btn {
+	font-family: 'Besley', serif;
+	padding: 12px 30px;
+	background-color: transparent; /* شفاف بودن دکمه */
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	text-decoration: none;
+	border-radius: 30px;
+	font-weight: 500;
+	font-size: 16px;
+	transition: all 0.4s ease; /* انیمیشن نرم */
+	backdrop-filter: blur(2px); /* شفافیت بیشتر */
+	margin: 0 15px; /* فاصله بین دکمه‌ها */
+  }
+  
+  .hero-btn:hover {
+	background-color: rgba(255, 255, 255, 0.2); /* شفافیت بیشتر هنگام hover */
+	border-color: #00aaff; /* تغییر رنگ مرز */
+	color: #00aaff; /* تغییر رنگ متن */
+	transform: translateY(-4px); /* افکت بالا رفتن */
+  }
+  
+  /* دکمه ثانویه */
+  .hero-btn.secondary {
+	border-color: #00aaff; /* مرز آبی برای دکمه ثانویه */
+	color: #00aaff;
+  }
+  
+  .hero-btn.secondary:hover {
+	background-color: rgba(0, 170, 255, 0.2); /* شفافیت بیشتر دکمه ثانویه */
+	color: #ffffff; /* رنگ متن سفید در حالت hover */
+	border-color: #ffffff;
+  }
 
 
 

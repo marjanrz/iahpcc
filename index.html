@@ -115,12 +115,11 @@
 							<div class="clear-toggle"></div>
 							<div id="main-menu" class="collapse scroll navbar-right">
                 <ul class="custom-navbar">
-  <li><a href="#" onclick="navigateTo('committee.html')">Committee</a></li>
-  <li><a href="#" onclick="navigateTo('keynote.html')">Keynote</a></li>
-  <li><a href="#" onclick="navigateTo('conferencenews.html')">Conference News</a></li>
-  <li><a href="#" onclick="navigateTo('farsi.html')">فارسی</a></li>
-    
-   <li> <a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a></li>
+  <li> <a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a></li>
+   <li><a href="#" onclick="navigateTo('committee.html')">Conference Chairs/Committees</a></li>
+  <li><a href="#" onclick="navigateTo('keynote.html')">Keynote Speakers</a></li>
+  
+   
  
   <!-- History Dropdown Menu -->
   <li class="history-dropdown">
@@ -131,7 +130,9 @@
       <a href="https://iahpc.ir/DCHPC2018" target="_blank">DCHPC 2018</a>
     </div>
   </li>
-
+<li><a href="#" onclick="navigateTo('conferencenews.html')">Conference News</a></li>
+  <li><a href="#" onclick="navigateTo('farsi.html')">فارسی</a></li>
+   
   <li><a href="#FAQ">FAQ</a></li>
 </ul>
 
@@ -145,14 +146,21 @@
 
         <!-- Start Slider  -->
         <section id="home" class="home">
-         
-
- 
-  <div class="slider-backgroundd" style="background-image: url('./iahpcc/background1.png');"></div>
-
-
-
+  <div class="slider-backgroundd" style="background-image: url('./iahpcc/background1.png');">
+    <div class="overlay-content">
+      <h1>DCHPC 2024</h1>
+      <p>
+        The Third International Conference on Distributed Computing and High Performance Computing,<br>
+        14th–15th May 2024, Tehran, Iran.
+      </p>
+      <div class="hero-buttons">
+        <a href="#register" class="hero-btn">Register Now</a>
+        <a href="#program" class="hero-btn secondary">View Program</a>
+      </div>
+    </div>
+  </div>
 </section>
+
  <div class="sponsor-containerr">
     <div class="sponsor-card">
       <a href="http://www.isi.org.ir/" target="_blank">
@@ -210,90 +218,92 @@
 
 <style>
   .important-dates-section {
-    padding: 60px 20px;
-    background: #f0f2f5;
-    font-family: 'Poppins', sans-serif;
-  }
+  padding: 60px 20px;
+  background: #f0f2f5;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .important-dates-wrapper {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 40px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  }
+.important-dates-wrapper {
+  max-width: 900px; /* تغییر به مقدار مشابه */
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
 
-  .title-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 30px;
-  }
 
-  .title-box i {
-    font-size: 26px;
-    color: #007bff;
-  }
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
 
+.title-box i {
+  font-size: 26px;
+  color: #007bff;
+}
+
+.animated-title {
+  font-size: 28px;
+  color: #2c3e50;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.dates-box {
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.dates-box p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.highlight {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.date-title {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.strike-box {
+  display: inline-block;
+  padding: 2px 8px;
+  background: #f1f1f1;
+  color: #999;
+  font-style: italic;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.strike-box strike {
+  text-decoration: line-through;
+  color: #999;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
   .animated-title {
-    font-size: 28px;
-    color: #2c3e50;
-    text-transform: capitalize;
-    margin: 0;
+    font-size: 22px;
   }
 
   .dates-box {
-    padding: 25px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
   }
+}
 
-  .dates-box p {
-    font-size: 16px;
-    line-height: 1.9;
-    color: #333;
-  }
-
-  .highlight {
-    color: #007bff;
-    font-weight: 500;
-  }
-
-  .date-title {
-    font-weight: 600;
-    color: #2c3e50;
-  }
-
-  .strike-box {
-    display: inline-block;
-    padding: 2px 8px;
-    background: #f1f1f1;
-    color: #999;
-    font-style: italic;
-    border-radius: 6px;
-    font-size: 15px;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-  }
-
-  .strike-box strike {
-    text-decoration: line-through;
-    color: #999;
-    opacity: 0.7;
-  }
-
-  @media (max-width: 600px) {
-    .animated-title {
-      font-size: 22px;
-    }
-
-    .dates-box {
-      padding: 20px;
-    }
-  }
 </style>
 
 
@@ -356,99 +366,101 @@
 </section>
 
 <style>
-  .conference-topics-section {
-    padding: 60px 20px;
-    background: #f5f7fa;
-    font-family: 'Poppins', sans-serif;
-  }
+ .conference-topics-section {
+  padding: 60px 20px;
+  background: #f5f7fa;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .conference-topics-section .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 40px 50px;
-    border-radius: 15px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-  }
+.conference-topics-section .container {
+  max-width: 900px; /* تغییر به مقدار مشابه */
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
 
-  .title-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 30px;
-    transition: all 0.3s ease-in-out;
-  }
 
-  .title-wrapper:hover {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px);
-    background: #f0faff;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
 
-  .title-wrapper i {
-    font-size: 26px;
-    color: #3498db;
-    transition: all 0.3s ease;
-  }
+.title-wrapper:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  background: #f0faff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
 
-  .animated-title {
-    color: #2c3e50;
-    font-size: 28px;
-    text-transform: capitalize;
-    transition: all 0.3s ease-in-out;
-  }
+.title-wrapper i {
+  font-size: 26px;
+  color: #3498db;
+  transition: all 0.3s ease;
+}
 
-  .conference-topics-section p {
-    font-size: 16px;
-    margin-bottom: 25px;
-    color: #555;
-    text-align: center;
-    text-transform: capitalize;
-  }
+.animated-title {
+  color: #2c3e50;
+  font-size: 28px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
 
+.conference-topics-section p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #555;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.topics {
+  list-style-type: disc;
+  text-align: left;
+  columns: 2;
+  column-gap: 40px;
+  padding-left: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.topics li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  padding-left: 5px;
+}
+
+.topics li:hover {
+  color: #2c3e50;
+  transform: translateX(5px);
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
   .topics {
-    list-style-type: disc;
-    text-align: left;
-    columns: 2;
-    column-gap: 40px;
-    padding-left: 20px;
-    animation: fadeIn 0.8s ease-in-out;
+    columns: 1;
   }
+}
 
-  .topics li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    position: relative;
-    transition: all 0.3s ease;
-    text-transform: capitalize;
-    padding-left: 5px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  .topics li:hover {
-    color: #2c3e50;
-    transform: translateX(5px);
-    font-weight: 500;
-  }
-
-  @media (max-width: 600px) {
-    .topics {
-      columns: 1;
-    }
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 </style>
 
 
@@ -526,79 +538,118 @@
 
 <!-- CSS styles -->
 <style>
-  .paper-submission {
-    padding: 60px 20px;
-    background: #f5f7fa;
-    font-family: 'Poppins', sans-serif;
-  }
+/* استایل کلی برای بخش Paper Submission */
+.paper-submission {
+  padding: 60px 20px;
+  background: #f5f7fa;
+  font-family: 'Poppins', sans-serif;
+}
 
+.paper-submission .container {
+  max-width: 1200px; /* تغییر عرض به 1200px برای هماهنگی بهتر */
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* سایه مشابه با سایر بخش‌ها */
+  transition: all 0.3s ease; /* برای انیمیشن هنگام تغییر اندازه */
+}
+
+/* استایل عنوان با آیکون */
+.animated-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #3498db;
+  display: inline-block;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* تغییرات آیکون */
+.animated-title i {
+  margin-right: 10px;
+  color: #2980b9;
+}
+
+/* تغییرات هنگام هاور روی عنوان */
+.animated-title:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  background: #f0faff;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+/* استایل پاراگراف‌ها */
+.paper-submission p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* لینک‌ها */
+.paper-submission a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.paper-submission a:hover {
+  text-decoration: underline;
+}
+
+/* استایل برای یادداشت */
+.paper-submission .note {
+  color: #c0392b;
+  font-weight: bold;
+  background-color: #fceae8;
+  padding: 15px;
+  border-left: 5px solid #e74c3c;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+/* تغییرات هنگام هاور روی یادداشت */
+.paper-submission .note:hover {
+  background-color: #f8d7da;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+}
+
+/* ریسپانسیو برای اندازه‌های کوچکتر */
+@media (max-width: 768px) {
   .paper-submission .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 40px 50px;
-    border-radius: 15px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* فقط یک سایه‌ی ظریف */
+    padding: 30px 20px; /* کاهش پدینگ برای دستگاه‌های موبایل */
   }
 
   .animated-title {
-    text-align: center;
-    color: #2c3e50;
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-    border-bottom: 2px solid #3498db;
-    display: inline-block;
-    padding-bottom: 10px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .animated-title i {
-    margin-right: 10px; /* فاصله‌ای برای آیکون از تیتر */
-    color: #2980b9; /* تغییر رنگ آیکون به آبی */
-  }
-
-  .animated-title:hover {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
-    background: #f0faff;
-    border-radius: 6px;
-    padding: 10px 20px;
+    font-size: 24px; /* تغییر اندازه فونت عنوان */
   }
 
   .paper-submission p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #333;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
+    font-size: 14px; /* کاهش اندازه فونت پاراگراف‌ها */
+  }
+}
+
+@media (max-width: 480px) {
+  .paper-submission .container {
+    padding: 20px 15px; /* کاهش پدینگ بیشتر */
   }
 
-  .paper-submission a {
-    color: #2980b9;
-    text-decoration: none;
+  .animated-title {
+    font-size: 20px; /* تغییر اندازه فونت بیشتر */
   }
 
-  .paper-submission a:hover {
-    text-decoration: underline;
+  .paper-submission p {
+    font-size: 12px; /* تغییر اندازه فونت برای دستگاه‌های کوچک */
   }
+}
 
-  .paper-submission .note {
-    color: #c0392b;
-    font-weight: bold;
-    background-color: #fceae8;
-    padding: 15px;
-    border-left: 5px solid #e74c3c;
-    border-radius: 8px;
-    transition: all 0.4s ease;
-  }
-
-  .paper-submission .note:hover {
-    background-color: #f8d7da;
-    transform: translateY(-4px);
-    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
-  }
 </style>
 
         </section>  
@@ -606,7 +657,6 @@
   </section>
   <!--End Section-->
   
-   
   <section id="history" class="section parallax">
     <div ></div>
     <div class="container">
@@ -614,9 +664,11 @@
         <h2 class="title history-title">About DCHPC Conference Series</h2>
       </div>
   
-      <ul class="timeline list-unstyled">
-        <li class="year"><a href="https://iahpc.ir/DCHPC2018" target="_blank">2018</a></li>
-        <li class="clear"></li>
+      <ul class="timeline">
+        
+        <li class="year">
+          <a href="https://iahpc.ir/DCHPC2018" target="_blank">2018</a>
+        </li>
         <li class="timeline-item timeline-right">
           <h4>About DCHPC2018:</h4>
           <p>
@@ -629,131 +681,25 @@
         <li class="timeline-item">
           <h4>About DCHPC2022:</h4>
           <p>
-            The Second International biennial Conference on Distributed Computing and High Performance Computing (DCHPC 2022) is organized jointly by the Informatics Society of Iran (DCS scientific group) and Qom University of Technology. The DCHPC2022 conference is technically supported by IEEE Iran section. This conference is biennial and the first Series of the DCHPC was held in 2018 successfully. Due to the Covid-19, the second series was postponed. This conference is an opportunity for the researchers to share their latest scientific findings in high performance computing, distributed systems and applications.
+            The Second International biennial Conference on Distributed Computing and High Performance Computing (DCHPC 2022) is organized jointly by the Informatics Society of Iran (DCS scientific group) and Qom University of Technology. The DCHPC2022 conference is technically supported by IEEE Iran section. Due to the Covid-19, the second series was postponed. This conference is an opportunity for the researchers to share their latest scientific findings in high performance computing, distributed systems and applications.
           </p>
         </li>
   
         <li class="year">2024</li>
-        <li class="clear"></li>
         <li class="timeline-item">
           <h4>About DCHPC2024:</h4>
           <p>
-            The DCHPC conference series commenced in 2018, hosting subsequent editions in 2018 and 2022. Regrettably, the DCHPC2020 conference had to be canceled due to the impact of the Covid-19 pandemic. The forthcoming third iteration of the DCHPC conference is slated for 2024 in Tehran and will be expertly organized by the <a class="link" href="http://www.isi.org.ir" target="_blank">Iran Informatics Society's DCS Scientific Group</a> and the esteemed <a class="link" href="https://cs.ipm.ac.ir/" target="_blank">School of Computer Science, Institute for Research in Fundamental Sciences (IPM)</a>. Esteemed researchers from across the globe are cordially invited to submit their groundbreaking findings on topics germane to the conference's scope and theme.
+            The DCHPC conference series commenced in 2018, hosting subsequent editions in 2018 and 2022. Regrettably, the DCHPC2020 conference had to be canceled due to the impact of the Covid-19 pandemic. The forthcoming third iteration of the DCHPC conference is slated for 2024 in Tehran and will be expertly organized by the 
+            <a class="link" href="http://www.isi.org.ir" target="_blank">Iran Informatics Society's DCS Scientific Group</a> 
+            and the esteemed 
+            <a class="link" href="https://cs.ipm.ac.ir/" target="_blank">School of Computer Science, Institute for Research in Fundamental Sciences (IPM)</a>. 
+            Esteemed researchers from across the globe are cordially invited to submit their groundbreaking findings on topics germane to the conference's scope and theme.
           </p>
         </li>
   
-        <li class="end-icon fa fa-bookmark"></li>
       </ul>
     </div>
   </section>
-  
-  <style>
-    #history {
-      position: relative;
-      padding: 80px 0;
-      background: url('./iahpcc/12334.png') no-repeat center center;
-      background-size: cover;
-      color: #fff;
-    }
-  
-    #history .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 0;
-    }
-  
-    #history .container {
-      position: relative;
-      z-index: 2;
-    }
-  
-    .history-title {
-      font-size: 38px;
-      font-weight: bold;
-      margin-bottom: 60px;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 10px;
-      border-bottom: 3px solid #FFD700;
-    }
-  
-    .timeline {
-      margin: 0 auto;
-      padding: 0;
-      max-width: 900px;
-    }
-  
-    .timeline-item {
-      background: rgba(255, 255, 255, 0.1);
-      border-left: 4px solid #FFD700;
-      margin-bottom: 40px;
-      padding: 20px 30px;
-      border-radius: 8px;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-  
-    .timeline-item:hover {
-      transform: translateY(-5px);
-      background: rgba(255, 255, 255, 0.15);
-    }
-  
-    .timeline-right {
-      text-align: right;
-      direction: rtl;
-      border-left: none;
-      border-right: 4px solid #FFD700;
-    }
-  
-    .timeline-item h4 {
-      font-size: 22px;
-      margin-bottom: 10px;
-      color: #FFD700;
-    }
-  
-    .timeline-item p {
-      line-height: 1.8;
-    }
-  
-    .year {
-      font-size: 26px;
-      font-weight: bold;
-      text-align: center;
-      margin: 50px 0 20px;
-      color: #FFD700;
-    }
-  
-    .btn-gallery {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #FFD700;
-      color: #000;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 15px;
-      transition: background 0.3s, transform 0.3s;
-    }
-  
-    .btn-gallery:hover {
-      background-color: #e6c200;
-      transform: scale(1.05);
-      color: #000;
-    }
-  
-    .link {
-      color: #5e500ae4;
-      text-decoration: underline;
-    }
-  
-    .link:hover {
-      color: #ffffff;
-      text-decoration: none;
-    }
-  </style>
   
    
    <section id="sponsors" class="section">
@@ -923,7 +869,7 @@
                              padding: 30px;
                              background: #fdfdfd;
                              border-radius: 12px;
-                             box-shadow: 0 0 20px rgba(0,0,0,0.05);
+                              box-shadow: 0 0 90px rgba(0,0,0,0.05); 
                              font-family: "Segoe UI", sans-serif;
                              color: #333;
                            }
@@ -1166,7 +1112,9 @@ h1.section-title + ul {
   <!--End Services-->
   <section class="location-section">
     <div class="container">
-      <h2 class="section-title">Location</h2>
+      <div class="section-title-wrapper">
+        <h2 class="section-title">Location</h2>
+      </div>
   
       <!-- Visa and Accommodation -->
       <div class="location-block">
@@ -1197,7 +1145,7 @@ h1.section-title + ul {
   <style>
     .location-section {
       
-    background: url('0987.png') no-repeat;
+    background: url('/iahpcc/0987.png') no-repeat;
       background-size: cover;
       background-position: center;
       padding: 60px 20px;
@@ -1214,7 +1162,7 @@ h1.section-title + ul {
       text-align: center;
       font-size: 36px;
       margin-bottom: 50px;
-      color: #241903;
+      color: #e6a013;
       border-bottom: 2px solid #3a2f1c;
       display: inline-block;
       padding-bottom: 10px;
@@ -1253,7 +1201,33 @@ h1.section-title + ul {
   
     .contact-info a:hover {
       text-decoration: underline;
-    }
+    }.section-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  background-color: rgba(230, 160, 19, 0.85);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid #3a2f1c;
+  cursor: default;
+}
+
+.section-title:hover {
+  background-color: rgba(255, 193, 67, 0.95);
+  color: #3a2f1c;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
   </style>
   
  
