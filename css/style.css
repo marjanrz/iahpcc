@@ -1289,7 +1289,7 @@ html[xmlns] .slides {
 #history {
 	position: relative;
 	padding: 80px 0;
-	background: url('/images/imagess/112.png') no-repeat center center;
+	/* background: url('/images/imagess/112.png') no-repeat center center; */
 	background-size: cover;
 	color: #fff;
   }
@@ -1650,7 +1650,7 @@ html[xmlns] .slides {
 #skills {
 	text-align: center;
 	padding: 10px 0px 0px;
-	background: url('/iahpcc/1111.jpg');
+	/* background: url('/iahpcc/1111.jpg'); */
 }
 
 
@@ -3315,26 +3315,13 @@ footer {
 	gap: 15px; /* فاصله بین لوگوها */
   }
   
-  .sponsor-cardd img {
+  .sponsor-card img {
 	max-width: 80%; /* حداکثر عرض برای جلوگیری از کشیدگی */
 	height: auto;
 	max-height: 30px; /* حداکثر ارتفاع برای لوگوها */
 	object-fit: contain; /* از کشیدگی لوگو جلوگیری می‌کند */
   }
-  .sponsor-container {
-	display: flex;
-	flex-direction: column;  /* چینش عمودی */
-	justify-content: flex-start; /* شروع از بالای بخش */
-	align-items: flex-start; /* چسبیدن به سمت چپ */
-	position: fixed;  /* باعث ثابت شدن لوگوها در صفحه */
-	top: 10%;  /* فاصله از بالا */
-	left: 20px;  /* فاصله از سمت چپ */
-	gap: 15px;  /* فاصله بین لوگوها */
-	z-index: 1000;  /* تنظیم لایه برای اینکه روی سایر محتوا قرار بگیرند */
-	width: 120px;  /* عرض کلی باکس */
-	height: auto;
-	background-color: transparent;  /* برای پس‌زمینه شفاف */
-  }
+
   
   .sponsor-card {
 	margin-bottom: 5px;  /* فاصله بین هر لوگو */
