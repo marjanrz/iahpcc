@@ -102,56 +102,64 @@
       display: block;
     }
 
-  </style>
-							<div class="clear-toggle"></div>
+  </style><div class="clear-toggle"></div>
 							<div id="main-menu" class="collapse scroll navbar-right">
-								<ul class="nav">
-                                   
-									<li class="active"> <a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a> </li>
-                                    <li class="active"> <a href="committee.html#">committee</a> </li>
-                                    <li class="active"> <a href="index.html#">Home</a> </li> 
-                   
-									
-                                    
-                                    
-                  <!-- <button onclick="window.location.href='committee.html'">committee</button> -->
+                <ul class="custom-navbar">
+  <li> <a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a></li>
+   <li><a href="committee.html" onclick="navigateTo('committee.html')">Conference Chairs/Committees</a></li>
+  <li><a href="keynote.html" onclick="navigateTo('keynote.html')">Keynote Speakers</a></li>
+  
+   
+ 
+  <!-- History Dropdown Menu -->
+  <li class="history-dropdown">
+    <div class="history-toggle">History</div>
+    <div class="history-content"href="2024.html">
+    <a href="index.html"> <button  onclick="navigateTo('2024.html')">DCHPC 2024</button></a> 
+    <a href="index.html">  <button onclick="navigateTo('2022.html')">DCHPC 2022</button></a> 
+    <a href="https://iahpc.ir/DCHPC2018">  <button href="https://iahpc.ir/DCHPC2018" target="_blank">DCHPC 2018</button></a> 
+    </div>
+  </li>
+<li><a href="conferencenews.html" onclick="navigateTo('conferencenews.html')">Conference News</a></li>
+ 
+    <li><a href="index.html">FAQ</a></li>
+  <li><a href="farsi.html" onclick="navigateTo('farsi.html')">فارسی</a></li>
+</ul>
 
-                                    
-                                    
-                                    
-                                   
-										
-								</ul>
-							</div><!-- end main-menu -->
-						</div>
-					</div>
-				</div>
+
+
+
 			</header>
     <!--End Navigation-->
 
-      
+   
+
         <!-- Start Slider  -->
         <section id="home" class="home">
-             <div class="slider-overlay"></div>
-            <div class="flexslider">
-                <ul class="slides scroll">
-                 
-                    
-                    <li class="secondary">
-                        <div class="slider-text-wrapper"> 
-                            <div class="container">                       
-                                    
-                                
-                                <!-- <a href="#works" class=" middle btn btn-white">VIEW PORTFOLIO</a> -->
-                            </div>
-                         </div>
-                         <img src="images/img-iahpc/5.jpg" alt="">
-                    </li>
-                    
-             
-                </ul>
-            </div>
-        </section>
+  <div class="slider-backgroundd" style="background-image: url('./iahpcc/pexels.JPG');">
+    <div class="overlay-content">
+  <h1>
+   
+    DCHPC 2026
+  </h1>
+  <p>
+    The Third International Conference on Distributed Computing and High Performance Computing,<br>
+    10th–11th May 2026, Tehran, Iran.
+  </p>
+  <div class="hero-buttons">
+    <a href="index.html" class="hero-btn">Important Dates</a>
+    <a href="index.html" class="hero-btn secondary">Submit Paper</a>
+  </div>
+</div>
+
+  </div>
+</section><div class="sponsor-containerr">
+  <div style="height: 120px; width: 180px;">
+    <a href="http://www.isi.org.ir/" target="_blank">
+      <img src="images/imagess/images/logoos.jpg" alt="ISI Logo 2" />
+    </a>
+  </div>
+</div>
           <!-- End Slider  -->
           <!DOCTYPE html>
 <html lang="en">
@@ -236,10 +244,7 @@
 </head>
 <body>
 
-  <div class="header">
-    <h1>Conference Keynote Speakers</h1>
-    <p>Meet our distinguished guests</p>
-  </div>
+  
 
   <section class="speakers">
     <div class="card"><a href="https://scholar.google.com/citations?hl=en&user=0AS7IpsAAAAJ" target="_blank">
@@ -265,50 +270,88 @@
 </html>
 
    <!--Start Footer-->
-  <!-- ===== FOOTER START ===== -->
-<footer class="footer">
+   
+   <footer class="footer">
     <div class="footer-container">
-      
-      <div class="footer-column">
+    
+      <!-- Contact Info -->
+      <div class="footer-column fade-in">
         <h1>Contacts</h1>
         <ul>
-          <li>Tel: +989100856079 (Whatsapp)</li>
-          <li>E-Mail: dchpc@ipm.ir</li>
-          <li>dchpc2024@gmail.com</li>
+          <li>
+            <a href="https://wa.me/989100856079" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i> +98 910 085 6079
+            </a>
+          </li>
+          <li>
+            <a href="mailto:dchpc@ipm.ir">
+              <i class="fa-solid fa-envelope"></i> dchpc@ipm.ir
+            </a>
+          </li>
+          <li>
+            <a href="mailto:dchpc2024@gmail.com">
+              <i class="fa-solid fa-envelope"></i> dchpc2024@gmail.com
+            </a>
+          </li>
         </ul>
       </div>
-  
-      <div class="footer-column">
+    
+      <!-- Related Links -->
+      <div class="footer-column fade-in">
         <h1>Related Links</h1>
         <ul>
-          <li><a href="https://ipm.ac.ir/">School of Computer Science, IPM</a></li>
-          <li><a href="http://www.isi.org.ir/">Informatics Society of Iran</a></li>
-          <li><a href="http://csj.isi.org.ir/">Computer Science Journal</a></li>
+          <li><a href="https://ipm.ac.ir/" target="_blank">School of Computer Science, IPM</a></li>
+          <li><a href="http://www.isi.org.ir/" target="_blank">Informatics Society of Iran</a></li>
+          <li><a href="http://csj.isi.org.ir/" target="_blank">Computer Science Journal</a></li>
         </ul>
       </div>
-  
-      <div class="footer-column">
+    
+      <!-- Quick Links & Visitor Counter -->
+      <div class="footer-column fade-in">
         <h1>Quick Links</h1>
         <ul>
-          <li><a href="#cfp">Important Dates</a></li>
+          <li><a href="#about" >Important Dates</a></li>
         </ul>
-        <div class="visitor-counter">
-          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
-        </div>
+    
+        <!-- <div class="visitor-box">
+          <h2><i class="fa-solid fa-eye"></i> </h2>
+          <div class="visitor-counter">
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
+          </div>
+        </div> -->
       </div>
-  
+    
     </div>
+    <div style="display: flex; justify-content: center; align-items: center; background-color: #2980b9; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative;">
+      <div style="margin-right: 15px;">
+        <i style="color: white; font-size: 18px; font-weight: 500;">Welcome! You're visitor number:</i>
+      </div>
+      <div style="position: relative; top: -10px;">
+        <i style="color: #e74c3c; font-size: 22px; font-weight: bold;">
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
+        </i>
+      </div>
+    
+      <!-- دکمه جدید اضافه شده -->
+      <!-- <div style="position: absolute; bottom: -15px; display: flex; justify-content: center; align-items: center; background-color: #3498db; padding: 10px 20px; border-radius: 5px; font-size: 16px; color: white; cursor: pointer; box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3); transition: transform 0.3s ease;">
+        <button onclick="window.location.href='#';" style="background-color: transparent; border: none; color: white; font-weight: bold; cursor: pointer;">Click Me!</button>
+      </div>
+    </div> -->
+    
     
   </footer>
-  <!-- ===== FOOTER END ===== -->
   
-  <!-- ===== FOOTER CSS STYLE ===== -->
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Footer Style -->
   <style>
     .footer {
       background-color: #111;
-      color: #f0f0f0;
-      padding: 40px 20px 20px;
+      color: white;
+      padding: 50px 20px 30px;
       font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
     }
   
     .footer-container {
@@ -320,18 +363,20 @@
     }
   
     .footer-column {
-      flex: 1 1 250px;
-      margin: 15px;
-      min-width: 200px;
+      flex: 1 1 300px;
+      margin: 20px;
     }
   
     .footer-column h1 {
-      font-size: 20px;
-      color: #ffffff;
+      font-size: 22px;
+      color:white;
       margin-bottom: 15px;
       border-bottom: 2px solid #444;
-      padding-bottom: 5px;
+      padding-bottom: 8px;
+    
     }
+  
+    
   
     .footer-column ul {
       list-style: none;
@@ -339,43 +384,117 @@
     }
   
     .footer-column li {
-      margin-bottom: 10px;
-      line-height: 1.6;
-      color: #ccc;
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: white;
     }
-  
-    .footer-column a {
-      color: #aaa;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-  
     .footer-column a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
+color: #fff; /* رنگ متن در حالت هاور */
+transform: scale(1.05);
+transition: transform 0.3s ease, color 0.3s;
+}
+    .footer-column a:hover i {
+color: #3498db; /* رنگ آیکون در حالت هاور */
+}
+    .footer-column a i {
+color:#28d47c; /* رنگ سبز پیش‌فرض آیکون */
+transition: color 0.3s ease;
+}
+    .footer-column a:hover i {
+color: #3498db; /* رنگ آیکون در حالت هاور */
+}
+.footer-column a:hover {
+color: #fff; /* رنگ متن در حالت هاور */
+transform: scale(1.05);
+transition: transform 0.3s ease, color 0.3s;
+}
+    /* .footer-column i {
+      color: #28d47c;
+      font-size: 17px;
+    } */
   
     .footer-bottom {
       text-align: center;
-      padding-top: 20px;
+      padding-top: 25px;
       border-top: 1px solid #333;
       font-size: 14px;
-      color: #888;
+      color: #aaa;
+      margin-top: 40px;
     }
   
+    /* Visitor Box Style */
+    .visitor-box {
+      background: linear-gradient(to right, #ffffff, #f7f7f7);
+      color: #333;
+      border-radius: 18px;
+      padding: 30px;
+      margin-top: 25px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.8s ease-in-out;
+    }
+  
+    .visitor-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.25);
+    }
+  
+    .visitor-box h2 {
+      color: #2c3e50;
+      font-size: 18px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    /* Fade-In Animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  
+    .fade-in:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+  
+    .fade-in:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+  
+    .fade-in:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+  
+    .footer-bottom.fade-in {
+      animation-delay: 0.8s;
+    }
+  
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    /* Responsive */
     @media (max-width: 768px) {
       .footer-container {
         flex-direction: column;
         align-items: center;
       }
-      .footer-column {
-        margin-bottom: 30px;
-        text-align: center;
+  
+      .footer-column a i {
+color: white; /* رنگ پیش‌فرض آیکون */
+transition: color 0.3s ease;
+}
+      .visitor-box {
+        width: 90%;
+        margin: 20px auto 0;
       }
     }
   </style>
-   <!--End Footer-->
-
+  
    <a href="#" class="scrollup"> <i class="fa fa-chevron-up"> </i> </a>
 
     <!--Plugins-->
@@ -400,6 +519,16 @@
           window.location.href = "2024.html"; // Redirects to 2022.html
         });
       </script>
+       <script>
+        document.getElementById("redirectButton2022").addEventListener("click", function() {
+          window.location.href = "2022.html"; // Redirects to 2022.html
+        });
+      </script>
+         <script>
+          document.getElementById("redirectButton2024").addEventListener("click", function() {
+            window.location.href = "2024.html"; // Redirects to 2022.html
+          });
+        </script>
        <!-- <script>
         // JavaScript to handle redirection
         document.getElementById("redirectButton1").addEventListener("click", function() {

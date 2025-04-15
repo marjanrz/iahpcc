@@ -37,267 +37,272 @@
    
       
    <!--Start Navigation-->
-		<header id="header">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="fa fa-bars"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-                            <!--Start Logo -->
-							<div class="logo-nav">
-								<a href="index.html">
-									<!-- <img src="images/logo.png" alt="Company logo" /> -->
-								</a>
-							</div>
-                            <!--End Logo -->
-                            <style>
-                           
-                         /* Style for the main button */
-    #mainButton {
-      padding: 15px 30px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      position: relative;
-      color: white;
-    }
+   <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fa fa-bars"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                        <!--Start Logo -->
+          <div class="logo-nav">
+            <a href="index.html">
+            
+            </a>
+          </div>
+                        <!--End Logo -->
+                        <style>
+                       
+                     /* Style for the main button */
+#mainButton {
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
 
-  
 
-    /* Container that holds the dropdown menu */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
 
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #333;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
+/* Container that holds the dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-    .dropdown-content button {
-      padding: 10px;
-      font-size: 14px;
-      background-color: #333;
-      border: none;
-      border-radius: 5px;
-      width: 100%;
-      cursor: pointer;
-    }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-    .dropdown-content button:hover {
-      background-color: #555;
-    }
+.dropdown-content button {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
 
-    /* Show the dropdown menu when hovering over the main button */
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
+.dropdown-content button:hover {
+  background-color: #555;
+}
 
-  </style>
-							<div class="clear-toggle"></div>
-							<div id="main-menu" class="collapse scroll navbar-right">
-								<ul class="nav">
-                               
-									
-									
-									<!-- <li> <a href="#about">Important Dates</a> </li> -->
-                                    
-                                    
-                  <!-- <button onclick="window.location.href='committee.html'">committee</button> -->
+/* Show the dropdown menu when hovering over the main button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}git remote add origin https://github.com/marjanrz/iahpcc.git
 
-                               
-                                   <li>  
-                                   
-                                      <div class="dropdown">
-                                        <!-- Main Button -->
-                                       <!-- <button id="mainButton"><a href="#history">History</a></button>
-                                  
-                                   
-                                        
-                                        <div class="dropdown-content">
-                                          <button ><a href="index.html#">Go to 2026 Page</button></a> 
-                                          <button id="redirectButton2024">Go to 2024 Page</button>
-  
-                                          <button id="redirectButton2022">Go to 2022 Page</button>
-                                          <button id="redirectButton2022"> <a href="https://iahpc.ir/DCHPC2018">Go to 2018 Page</a></button>
-                                        </div>
-                                        
-                                    </div></li> -->
-							    <li class="active"> <a href="farsi.html" target="_blank">فارسی</a> </li>	     <li>  
-                                      <a href="/files/DCHPC2024.ppt" target="_blank"><li> Poster</li></a>
-																		<li class="active"> <a href="Committee2022.html" target="_blank">Committee2022</a> </li> 
-                                    <li class="active"> <a href="KeynoteSpeakers2022.html" target="_blank">KeynoteSpeakers2022</a> </li> 
-                                    
-                                     <li class="active"> <a href="Publications.html" target="_blank">Publication & Index</a> </li> 
-                                       <li class="active"> <a href="#clients">Sponsors</a></li>
-                                   <li class="active"> <a href="index.html#">Home</a> </li>
-                               
-										
-								</ul>
-							</div><!-- end main-menu -->
-						</div>
-					</div>
-				</div>
-			</header>
-    <!--End Navigation-->
+</style>
+          <div class="clear-toggle"></div>
+          <div id="main-menu" class="collapse scroll navbar-right">
+            <ul class="custom-navbar">
+<li> <a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a></li>
+<li><a href="Committee2022.html" onclick="navigateTo('Committee2022.html')">Committee2022</a></li>
+<li><a href="KeynoteSpeakers2022.html" onclick="navigateTo('KeynoteSpeakers2022')">Keynote Speakers</a></li>
 
-      
-        <!-- Start Slider  -->
-        <section id="home" class="home">
-             <div class="slider-overlay"></div>
-            <div class="flexslider">
-                <ul class="slides scroll">
-                  
-                    
-                
-                    
-                    <li class="third">
-                        <div class="slider-text-wrapper"> 
-                            <div class="container">                              
-                              
-                             </div>
-                        </div>
-                        <img src="images/img-iahpc/10.jpg" alt="">
-                    </li>
-                </ul>
-            </div>
-        </section>
-          <!-- End Slider  -->
 
-          
+
+<!-- History Dropdown Menu -->
+<li class="history-dropdown">
+<div class="history-toggle">History</div>
+<div class="history-content">
+  <a href="index.html"> <button  onclick="navigateTo('2024.html')">DCHPC 2024</button></a> 
+    <a href="index.html">  <button onclick="navigateTo('index.html')">DCHPC 2026</button></a> 
+    <a href="https://iahpc.ir/DCHPC2018">  <button href="https://iahpc.ir/DCHPC2018" target="_blank">DCHPC 2018</button></a> 
+    </div>
+</li>
+<li><a href="conferencenews.html" onclick="navigateTo('conferencenews.html')">Conference News</a></li>
+
+<li><a href="#FAQ">FAQ</a></li>
+<li><a href="#" onclick="navigateTo('farsi.html')">فارسی</a></li>
+</ul>
+
+
+
+
+  </header>
+<!--End Navigation-->
+
+
+
+    <!-- Start Slider  -->
+    <section id="home" class="home">
+<div class="slider-backgroundd" style="background-image: url('./iahpcc/pexels.JPG');">
+<div class="overlay-content">
+<h1>
+
+DCHPC 2022
+</h1>
+<p>
+The Third International Conference on Distributed Computing and High Performance Computing,<br>
+2nd-3rd March 2022,
+Qom, Iran.
+
+
+</p>
+<div class="hero-buttons">
+<a href="#about" class="hero-btn">Important Dates</a>
+<a href="#paper" class="hero-btn secondary">Submit Paper</a>
+</div>
+</div>
+
+</div>
+</section>
+<div class="sponsor-containerr">
+<div style="height: 120px; width: 180px;">
+<a href="http://www.isi.org.ir/" target="_blank">
+  <img src="images/imagess/images/logoos.jpg" alt="ISI Logo 2" />
+</a>
+</div>
+</div>
+
 
   <!--Start Features-->
-  <section id="about" class="important-dates-section">
-    <div class="container">
-      <div class="important-dates-wrapper">
-        <div class="title-box">
-          <i class="fas fa-calendar-alt"></i>
-          <h2 class="animated-title">Important Dates (Final Extension)</h2>
-        </div>
-        
-        <div class="dates-box">
-          <p>
-            <span class="date-title">Conference Date:</span> 14<sup>th</sup>-15<sup>th</sup> May 2024<br />
-            <span class="date-title">Submission Date (Start):</span> 22<sup>nd</sup> June 2023<br />
-            <span class="date-title">Submission Date:</span> 
-            <span class="strike-box">
-              <strike>22<sup>nd</sup> November</strike>
-            </span> 
-            → 15<sup>th</sup> December 2023<br />
-            
-            <span class="date-title">Acceptance Notification:</span> 
-            <span class="strike-box">
-              <strike>15<sup>th</sup> January 2024</strike>
-            </span> 
-            → <span class="highlight">22<sup>nd</sup> January 2024</span><br />
-  
-            <span class="date-title">Early Bird Registration:</span> 21<sup>st</sup> January 2024<br />
-            <span class="date-title">Regular Registration (Deadline):</span> 9<sup>th</sup> February 2024<br />
-            <span class="date-title">Camera Ready Due Date:</span> 9<sup>th</sup> February 2024
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+ 
+          <!-- End Slider  -->
+
+          <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<section id="about" class="important-dates-section">
   <style>
     .important-dates-section {
       padding: 60px 20px;
-      background: #f0f2f5;
-      font-family: 'Poppins', sans-serif;
-    }
-  
-    .important-dates-wrapper {
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 40px;
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    }
-  
-    .title-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 30px;
-    }
-  
-    .title-box i {
-      font-size: 26px;
-      color: #007bff;
-    }
-  
-    .animated-title {
-      font-size: 28px;
-      color: #2c3e50;
-      text-transform: capitalize;
-      margin: 0;
-    }
-  
-    .dates-box {
-      padding: 25px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-    }
-  
-    .dates-box p {
-      font-size: 16px;
-      line-height: 1.9;
+      background-color: #fff;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
     }
-  
-    .highlight {
-      color: #007bff;
-      font-weight: 500;
+
+    .important-dates-section .container {
+      max-width: 800px;
+      margin: 0 auto;
     }
-  
+
+    .important-dates-section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #222;
+      font-weight: bold;
+      position: relative;
+      animation: fadeIn 1s ease-in-out;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .important-dates-section h2:hover {
+      color: #0066cc;
+      transform: translateY(-5px);
+    }
+
+    .important-dates-section .dates-box {
+      display: grid;
+      gap: 20px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .date-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 12px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .date-row:hover {
+      background-color: #f5faff;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
+    }
+
     .date-title {
       font-weight: 600;
-      color: #2c3e50;
+      color: #555;
     }
-  
-    .strike-box {
-      display: inline-block;
-      padding: 2px 8px;
-      background: #f1f1f1;
+
+    .updated-date {
+      color: #0066cc;
+      font-weight: 500;
+    }
+
+    del {
       color: #999;
-      font-style: italic;
-      border-radius: 6px;
-      font-size: 15px;
-      transition: all 0.3s ease-in-out;
-      text-decoration: none;
+      margin-right: 8px;
     }
-  
-    .strike-box strike {
-      text-decoration: line-through;
-      color: #999;
-      opacity: 0.7;
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-  
+
     @media (max-width: 600px) {
-      .animated-title {
-        font-size: 22px;
-      }
-  
-      .dates-box {
-        padding: 20px;
+      .date-row {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
-  
+
+  <div class="container">
+    <h2>Important Dates <span style="color: #e53935; font-size: 16px;">(Final Extension)</span></h2>
+
+    <div class="dates-box">
+      <div class="date-row">
+        <span class="date-title">Conference Date:</span>
+        <span>14<sup>th</sup>–15<sup>th</sup> May 2024</span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Submission Start:</span>
+        <span>22<sup>nd</sup> June 2023</span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Submission Deadline:</span>
+        <span>
+          <del>22<sup>nd</sup> November</del>
+          <span class="updated-date">15<sup>th</sup> December 2023</span>
+        </span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Acceptance Notification:</span>
+        <span>
+          <del>15<sup>th</sup> Jan 2024</del>
+          <span class="updated-date">22<sup>nd</sup> January 2024</span>
+        </span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Early Bird Registration:</span>
+        <span>21<sup>st</sup> January 2024</span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Regular Registration Deadline:</span>
+        <span>9<sup>th</sup> February 2024</span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Camera Ready Due:</span>
+        <span>9<sup>th</sup> February 2024</span>
+      </div>
+    </div>
+  </div>
+</section>
+
   
   
    
@@ -311,148 +316,135 @@
     </section>
     <!--End Facts-->
   
-    <!-- Font Awesome CDN for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  
-  <section class="conference-topics-section">
-    <div class="container">
-      <div class="title-wrapper">
-        <i class="fas fa-bullseye"></i>
-        <h2 class="animated-title">Conference Topics</h2>
+    <section class="conference-topics-section">
+      <div class="container">
+        <div class="title-wrapper no-hover">
+          <h2 class="animated-title">Conference Topics</h2>
+        </div>
+        
+        <p>Topics of interest include, but are not limited to:</p>
+    
+        <ul class="topics">
+          <li>High Performance Computing</li>
+          <li>Distributed Computing</li>
+          <li>Cloud Computing</li>
+          <li>Grid Computing</li>
+          <li>Internet of Things</li>
+          <li>Evolutionary Computing, Meta-Heuristics and Neural Networks</li>
+          <li>Fog Computing</li>
+          <li>Edge Computing</li>
+          <li>Scheduling</li>
+          <li>Parallel Algorithms</li>
+          <li>Parallel Processing</li>
+          <li>Applications of Parallel/Distributed Computing</li>
+          <li>Industrial Internet of Things</li>
+          <li>Security of Distributed Computing</li>
+          <li>Tools and Environments for Parallel/Distributed</li>
+          <li>Performance Analysis</li>
+          <li>Pervasive Computing</li>
+          <li>Ubiquitous Computing</li>
+          <li>Information Science</li>
+          <li>Big Data</li>
+          <li>Data Science</li>
+          <li>Graph Theory and Routing</li>
+          <li>Block-Chain</li>
+          <li>Virtualization Technology</li>
+          <li>Container and Container Orchestration</li>
+          <li>Networking and Network Science</li>
+          <li>Distributed and Parallel Storage /Database Systems</li>
+          <li>Microservices</li>
+          <li>Software-defined Network</li>
+        </ul>
       </div>
-      
-      <p>Topics of interest include, but are not limited to:</p>
-  
-      <ul class="topics">
-        <li>High Performance Computing</li>
-        <li>Distributed Computing</li>
-        <li>Cloud Computing</li>
-        <li>Grid Computing</li>
-        <li>Internet of Things</li>
-        <li>Evolutionary Computing, Meta-Heuristics and Neural Networks</li>
-        <li>Fog Computing</li>
-        <li>Edge Computing</li>
-        <li>Scheduling</li>
-        <li>Parallel Algorithms</li>
-        <li>Parallel Processing</li>
-        <li>Applications of Parallel/Distributed Computing</li>
-        <li>Industrial Internet of Things</li>
-        <li>Security of Distributed Computing</li>
-        <li>Tools and Environments for Parallel/Distributed</li>
-        <li>Performance Analysis</li>
-        <li>Pervasive Computing</li>
-        <li>Ubiquitous Computing</li>
-        <li>Information Science</li>
-        <li>Big Data</li>
-        <li>Data Science</li>
-        <li>Graph Theory and Routing</li>
-        <li>Block-Chain</li>
-        <li>Virtualization Technology</li>
-        <li>Container and Container Orchestration</li>
-        <li>Networking and Network Science</li>
-        <li>Distributed and Parallel Storage /Database Systems</li>
-        <li>Microservices</li>
-        <li>Software-defined Network</li>
-      </ul>
-    </div>
-  </section>
-  
-  <style>
-    .conference-topics-section {
-      padding: 60px 20px;
-      background: #f5f7fa;
-      font-family: 'Poppins', sans-serif;
-    }
-  
-    .conference-topics-section .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 40px 50px;
-      border-radius: 15px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-    }
-  
-    .title-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 30px;
-      transition: all 0.3s ease-in-out;
-    }
-  
-    .title-wrapper:hover {
-      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-      transform: translateY(-3px);
-      background: #f0faff;
-      padding: 10px 20px;
-      border-radius: 10px;
-    }
-  
-    .title-wrapper i {
-      font-size: 26px;
-      color: #3498db;
-      transition: all 0.3s ease;
-    }
-  
-    .animated-title {
-      color: #2c3e50;
-      font-size: 28px;
-      text-transform: capitalize;
-      transition: all 0.3s ease-in-out;
-    }
-  
-    .conference-topics-section p {
-      font-size: 16px;
-      margin-bottom: 25px;
-      color: #555;
-      text-align: center;
-      text-transform: capitalize;
-    }
-  
-    .topics {
-      list-style-type: disc;
-      text-align: left;
-      columns: 2;
-      column-gap: 40px;
-      padding-left: 20px;
-      animation: fadeIn 0.8s ease-in-out;
-    }
-  
-    .topics li {
-      margin-bottom: 10px;
-      font-size: 15px;
-      position: relative;
-      transition: all 0.3s ease;
-      text-transform: capitalize;
-      padding-left: 5px;
-    }
-  
-    .topics li:hover {
-      color: #2c3e50;
-      transform: translateX(5px);
-      font-weight: 500;
-    }
-  
-    @media (max-width: 600px) {
+    </section>
+    
+    <style>
+      .conference-topics-section {
+        padding: 60px 20px;
+        background: #f5f7fa;
+        font-family: 'Poppins', sans-serif;
+      }
+    
+      .conference-topics-section .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 40px 50px;
+        border-radius: 15px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      }
+    
+      .title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+    
+      .animated-title {
+        color: #2c3e50;
+        font-size: 28px;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin: 0;
+        position: relative;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+    
+      .animated-title:hover {
+        color: #0066cc;
+        transform: translateY(-5px);
+      }
+    
+      .conference-topics-section p {
+        font-size: 16px;
+        margin-bottom: 25px;
+        color: #555;
+        text-align: left;
+        text-transform: capitalize;
+      }
+    
       .topics {
-        columns: 1;
+        list-style-type: disc;
+        text-align: left;
+        columns: 2;
+        column-gap: 40px;
+        padding-left: 20px;
+        animation: fadeIn 0.8s ease-in-out;
       }
-    }
-  
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
+    
+      .topics li {
+        margin-bottom: 10px;
+        font-size: 15px;
+        position: relative;
+        transition: all 0.3s ease;
+        text-transform: capitalize;
+        padding-left: 5px;
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+    
+      .topics li:hover {
+        color: #0066cc;
+        transform: translateX(5px);
+        font-weight: 500;
       }
-    }
-  </style>
-  
+    
+      @media (max-width: 600px) {
+        .topics {
+          columns: 1;
+        }
+      }
+    
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   
   
     <section id="factss" class="section parallax">
@@ -490,133 +482,168 @@
               <div class="tab-arrow">
               </div>
             </li> -->
-           <!-- Font Awesome CDN (Only once in your project) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+            <section id="paper" class="paper-submission">
+              <div>
+                <!-- Title without Icon -->
+                <h2 class="animated-title">
+                  Paper Submission
+                </h2>
+                
+                <p>
+                  Authors are invited to submit full-length papers to DCHPC2024 through the online paper submission system by the submission deadline. Submission implies that the paper is original and unpublished (<a href="https://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank">IEEE code of ethics</a>).
+                </p>
+                
+                <p>
+                  A complete paper must be prepared using the IEEE template (available for <a href="#">MS Word</a> or <a href="#">LaTeX</a>) and follow the blind-submission review format.
+                </p>
+                
+                <p class="note">
+                  Note: The DCHPC2024 review process is double-blind. Authors do not know the reviewers’ identities, and reviewers do not know the names of the authors.
+                </p>
+                
+                <p>
+                  Please avoid including any author-identifying information in the acknowledgments or supplemental materials. Also avoid linking to websites that may reveal the authors’ identity.
+                </p>
+                
+                <p>
+                  Papers must be submitted electronically in PDF format via the <a href="#">submission portal</a>.
+                </p>
+                
+                <p>
+                  For enquiries, contact: <strong>dchpc2024@gmail.com</strong> or <strong style="color:#27ae60;">+989100856079</strong> <span style="font-style: italic;">(SMS or WhatsApp)</span>.
+                </p>
+              </div>
+            </section>
+            
+            <!-- CSS styles -->
+            <style>
+            /* استایل کلی برای بخش Paper Submission */
+            .paper-submission {
+              padding: 60px 20px;
+              background: #f5f7fa;
+              font-family: 'Poppins', sans-serif;
+              width: 1100px;
+            }
+            
+            .paper-submission .container {
+              max-width: 1200px; /* تغییر عرض به 1200px برای هماهنگی بهتر */
+              margin: 0 auto;
+              background: #ffffff;
+              padding: 40px 50px;
+              border-radius: 15px;
+              box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* سایه مشابه با سایر بخش‌ها */
+              transition: all 0.3s ease; /* برای انیمیشن هنگام تغییر اندازه */
+            }
+            
+            /* استایل عنوان بدون آیکون */
+            .animated-title {
+              text-align: center;
+              color: #2c3e50;
+              font-size: 28px;
+              margin-bottom: 30px;
+              text-transform: capitalize;
+              border-bottom: 2px solid #3498db;
+              display: inline-block;
+              padding-bottom: 10px;
+              transition: all 0.3s ease-in-out;
+            }
+            
+            /* تغییرات هنگام هاور روی عنوان */
+            .animated-title:hover {
+              box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+              transform: translateY(-3px);
+              background: #f0faff;
+              border-radius: 6px;
+              padding: 10px 20px;
+            }
+            
+            /* استایل پاراگراف‌ها */
+            .paper-submission p {
+              font-size: 16px;
+              line-height: 1.8;
+              color: #333;
+              text-transform: capitalize;
+              margin-bottom: 20px;
+              transition: all 0.3s ease-in-out;
+            }
+            
+            /* لینک‌ها */
+            .paper-submission a {
+              color: #2980b9;
+              text-decoration: none;
+            }
+            
+            .paper-submission a:hover {
+              text-decoration: underline;
+            }
+            
+            /* استایل برای یادداشت */
+            .paper-submission .note {
+              color: #c0392b;
+              font-weight: bold;
+              background-color: #fceae8;
+              padding: 15px;
+              border-left: 5px solid #e74c3c;
+              border-radius: 8px;
+              transition: all 0.4s ease;
+            }
+            
+            /* تغییرات هنگام هاور روی یادداشت */
+            .paper-submission .note:hover {
+              background-color: #f8d7da;
+              transform: translateY(-4px);
+              box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+            }
+            
+            /* ریسپانسیو برای اندازه‌های کوچکتر */
+            @media (max-width: 768px) {
+              .paper-submission .container {
+                padding: 30px 20px; /* کاهش پدینگ برای دستگاه‌های موبایل */
+              }
+            
+              .animated-title {
+                font-size: 24px; /* تغییر اندازه فونت عنوان */
+              }
+            
+              .paper-submission p {
+                font-size: 14px; /* کاهش اندازه فونت پاراگراف‌ها */
+              }
+            }
+            
+            @media (max-width: 480px) {
+              .paper-submission .container {
+                padding: 20px 15px; /* کاهش پدینگ بیشتر */
+              }
+            
+              .animated-title {
+                font-size: 20px; /* تغییر اندازه فونت بیشتر */
+              }
+            
+              .paper-submission p {
+                font-size: 12px; /* تغییر اندازه فونت برای دستگاه‌های کوچک */
+              }
+            }
+            
+            
   
-  <section class="paper-submission">
-    <div >
-      <!-- Title with Icon -->
-      <h2 class="animated-title">
-        <i class="fas fa-file-alt"></i> Paper Submission
-      </h2>
-      
-      <p>
-        Authors are invited to submit full-length papers to DCHPC2024 through the online paper submission system by the submission deadline. Submission implies that the paper is original and unpublished (<a href="https://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank">IEEE code of ethics</a>).
-      </p>
-      
-      <p>
-        A complete paper must be prepared using the IEEE template (available for <a href="#">MS Word</a> or <a href="#">LaTeX</a>) and follow the blind-submission review format.
-      </p>
-      
-      <p class="note">
-        Note: The DCHPC2024 review process is double-blind. Authors do not know the reviewers’ identities, and reviewers do not know the names of the authors.
-      </p>
-      
-      <p>
-        Please avoid including any author-identifying information in the acknowledgments or supplemental materials. Also avoid linking to websites that may reveal the authors’ identity.
-      </p>
-      
-      <p>
-        Papers must be submitted electronically in PDF format via the <a href="#">submission portal</a>.
-      </p>
-      
-      <p>
-        For enquiries, contact: <strong>dchpc2024@gmail.com</strong> or <strong style="color:#27ae60;">+989100856079</strong> <span style="font-style: italic;">(SMS or WhatsApp)</span>.
-      </p>
-    </div>
-  
-  
-  <!-- CSS styles -->
-  <style>
-    .paper-submission {
-      padding: 60px 20px;
-      background: #ffffff;
-      font-family: 'Poppins', sans-serif;
-    }
-  
-    .paper-submission .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 40px 50px;
-      border-radius: 15px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* فقط یک سایه‌ی ظریف */
-    }
-  
-    .animated-title {
-      text-align: center;
-      color: #2c3e50;
-      font-size: 28px;
-      margin-bottom: 30px;
-      text-transform: capitalize;
-      border-bottom: 2px solid #3498db;
-      display: inline-block;
-      padding-bottom: 10px;
-      transition: all 0.3s ease-in-out;
-    }
-  
-    .animated-title i {
-      margin-right: 10px; /* فاصله‌ای برای آیکون از تیتر */
-      color: #2980b9; /* تغییر رنگ آیکون به آبی */
-    }
-  
-    .animated-title:hover {
-      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-      transform: translateY(-3px);
-      background: #f0faff;
-      border-radius: 6px;
-      padding: 10px 20px;
-    }
-  
-    .paper-submission p {
-      font-size: 16px;
-      line-height: 1.8;
-      color: #333;
-      text-transform: capitalize;
-      margin-bottom: 20px;
-      transition: all 0.3s ease-in-out;
-    }
-  
-    .paper-submission a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-  
-    .paper-submission a:hover {
-      text-decoration: underline;
-    }
-  
-    .paper-submission .note {
-      color: #c0392b;
-      font-weight: bold;
-      background-color: #fceae8;
-      padding: 15px;
-      border-left: 5px solid #e74c3c;
-      border-radius: 8px;
-      transition: all 0.4s ease;
-    }
-  
-    .paper-submission .note:hover {
-      background-color: #f8d7da;
-      transform: translateY(-4px);
-      box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
-    }
   </style>
   
           </section>  
               
     </section>
       
-    <section id="history" class="section parallax">
+    <section id="history" class="section parallax" style="background-image: url('./iahpcc/historyy.png');">
       <div ></div>
       <div class="container">
         <div class="title-box text-center white">
           <h2 class="title history-title">About DCHPC Conference Series</h2>
         </div>
     
-        <ul class="timeline list-unstyled">
-          <li class="year"><a href="https://iahpc.ir/DCHPC2018" target="_blank">2018</a></li>
-          <li class="clear"></li>
+        <ul class="timeline">
+          
+          <li class="year">
+            <a  class="year">2018</a>
+          </li>
           <li class="timeline-item timeline-right">
             <h4>About DCHPC2018:</h4>
             <p>
@@ -629,124 +656,16 @@
           <li class="timeline-item">
             <h4>About DCHPC2022:</h4>
             <p>
-              The Second International biennial Conference on Distributed Computing and High Performance Computing (DCHPC 2022) is organized jointly by the Informatics Society of Iran (DCS scientific group) and Qom University of Technology. The DCHPC2022 conference is technically supported by IEEE Iran section. This conference is biennial and the first Series of the DCHPC was held in 2018 successfully. Due to the Covid-19, the second series was postponed. This conference is an opportunity for the researchers to share their latest scientific findings in high performance computing, distributed systems and applications.
+              The Second International biennial Conference on Distributed Computing and High Performance Computing (DCHPC 2022) is organized jointly by the Informatics Society of Iran (DCS scientific group) and Qom University of Technology. The DCHPC2022 conference is technically supported by IEEE Iran section. Due to the Covid-19, the second series was postponed. This conference is an opportunity for the researchers to share their latest scientific findings in high performance computing, distributed systems and applications.
             </p>
           </li>
     
-        
+          
     
-          <li class="end-icon fa fa-bookmark"></li>
         </ul>
       </div>
     </section>
     
-    <style>
-      #history {
-        position: relative;
-        padding: 80px 0;
-        background: url('./iahpcc/12334.png') no-repeat center center;
-        background-size: cover;
-        color: #fff;
-      }
-    
-      #history .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 0;
-      }
-    
-      #history .container {
-        position: relative;
-        z-index: 2;
-      }
-    
-      .history-title {
-        font-size: 38px;
-        font-weight: bold;
-        margin-bottom: 60px;
-        position: relative;
-        display: inline-block;
-        padding-bottom: 10px;
-        border-bottom: 3px solid #FFD700;
-      }
-    
-      .timeline {
-        margin: 0 auto;
-        padding: 0;
-        max-width: 900px;
-      }
-    
-      .timeline-item {
-        background: rgba(255, 255, 255, 0.1);
-        border-left: 4px solid #FFD700;
-        margin-bottom: 40px;
-        padding: 20px 30px;
-        border-radius: 8px;
-        transition: transform 0.3s ease, background 0.3s ease;
-      }
-    
-      .timeline-item:hover {
-        transform: translateY(-5px);
-        background: rgba(255, 255, 255, 0.15);
-      }
-    
-      .timeline-right {
-        text-align: right;
-        direction: rtl;
-        border-left: none;
-        border-right: 4px solid #FFD700;
-      }
-    
-      .timeline-item h4 {
-        font-size: 22px;
-        margin-bottom: 10px;
-        color: #FFD700;
-      }
-    
-      .timeline-item p {
-        line-height: 1.8;
-      }
-    
-      .year {
-        font-size: 26px;
-        font-weight: bold;
-        text-align: center;
-        margin: 50px 0 20px;
-        color: #FFD700;
-      }
-    
-      .btn-gallery {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #FFD700;
-        color: #000;
-        font-weight: bold;
-        border-radius: 8px;
-        text-decoration: none;
-        margin-top: 15px;
-        transition: background 0.3s, transform 0.3s;
-      }
-    
-      .btn-gallery:hover {
-        background-color: #e6c200;
-        transform: scale(1.05);
-        color: #000;
-      }
-    
-      .link {
-        color: #5e500ae4;
-        text-decoration: underline;
-      }
-    
-      .link:hover {
-        color: #ffffff;
-        text-decoration: none;
-      }
-    </style>
    
    <section id="clients" class="sponsors-section">
     <div class="sponsors-container">
@@ -1007,7 +926,7 @@
    
 
    
-   <section  id="skills" class="section parallax">
+   <section  id="skills" class="section parallax" style="background-image: url('./iahpcc/table.jpg');">
            
             
     <div class="row">
@@ -1132,7 +1051,7 @@
                padding: 30px;
                background: #fdfdfd;
                border-radius: 12px;
-               box-shadow: 0 0 20px rgba(0,0,0,0.05);
+                box-shadow: 0 0 90px rgba(0,0,0,0.05); 
                font-family: "Segoe UI", sans-serif;
                color: #333;
              }
@@ -1245,7 +1164,10 @@ transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* افکت هاور برای تیتر */
-
+h1.section-title:hover {
+background-color: #2980b9;
+color: white;
+}
 
 /* استایل برای لیست */
 ul {
@@ -1286,7 +1208,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
 /* افکت هاور برای تیتر */
 h1.section-title:hover {
 background-color: #2980b9;
-color: #2980b9;
+color: white;
 }
 
 /* استایل برای یادداشت */
@@ -1315,6 +1237,15 @@ margin-top: 10px; /* فاصله کم‌تر از بخش‌های قبلی */
            </script>
         </section> 
        <!--End Services-->
+     
+       
+        
+     
+  <!-- /.row-->
+</div> <!-- /.container-->
+</section> 
+
+
      
        
         
@@ -1374,9 +1305,11 @@ margin-top: 10px; /* فاصله کم‌تر از بخش‌های قبلی */
     </div>
   </section>
   
-  <section class="location-section">
+  <section class="location-section" style="background-image: url('./iahpcc/parisa.jpg');">
     <div class="container">
-      <h2 class="section-title">Location</h2>
+      <div class="section-title-wrapper">
+        <h2 class="section-title">Location</h2>
+      </div>
   
       <!-- Visa and Accommodation -->
       <div class="location-block">
@@ -1406,8 +1339,7 @@ margin-top: 10px; /* فاصله کم‌تر از بخش‌های قبلی */
   
   <style>
     .location-section {
-      
-    background: url('0987.png') no-repeat;
+    
       background-size: cover;
       background-position: center;
       padding: 60px 20px;
@@ -1416,7 +1348,7 @@ margin-top: 10px; /* فاصله کم‌تر از بخش‌های قبلی */
     }
   
     .container {
-      max-width: 900px;
+      /* max-width: 900px; */
       margin: 0 auto;
     }
   
@@ -1424,7 +1356,7 @@ margin-top: 10px; /* فاصله کم‌تر از بخش‌های قبلی */
       text-align: center;
       font-size: 36px;
       margin-bottom: 50px;
-      color: #241903;
+      color: #2980b9;
       border-bottom: 2px solid #3a2f1c;
       display: inline-block;
       padding-bottom: 10px;
@@ -1463,10 +1395,35 @@ margin-top: 10px; /* فاصله کم‌تر از بخش‌های قبلی */
   
     .contact-info a:hover {
       text-decoration: underline;
-    }
+    }.section-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #140808;
+  background-color: rgba(208, 206, 202, 0.85);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid #3a2f1c;
+  cursor: default;
+}
+
+.section-title:hover {
+  background-color:#2980b9;
+  color: #3a2f1c;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
   </style>
   
- 
      <!--Start Why Choose us-->
     <!--Start Why Choose us-->
       <!--Start Why Choose us-->
@@ -1688,215 +1645,230 @@ margin-top: 10px; /* فاصله کم‌تر از بخش‌های قبلی */
      </body>
      </html>
    
-   <!--Start Footer-->
-  <!-- ===== FOOTER START ===== -->
-<footer class="footer">
-        <div class="footer-container">
-        
-          <!-- Contact Info -->
-          <div class="footer-column fade-in">
-            <h1>Contacts</h1>
-            <ul>
-              <li>
-                <a href="https://wa.me/989100856079" target="_blank">
-                  <i class="fa-brands fa-whatsapp"></i> +98 910 085 6079
-                </a>
-              </li>
-              <li>
-                <a href="mailto:dchpc@ipm.ir">
-                  <i class="fa-solid fa-envelope"></i> dchpc@ipm.ir
-                </a>
-              </li>
-              <li>
-                <a href="mailto:dchpc2024@gmail.com">
-                  <i class="fa-solid fa-envelope"></i> dchpc2024@gmail.com
-                </a>
-              </li>
-            </ul>
-          </div>
-        
-          <!-- Related Links -->
-          <div class="footer-column fade-in">
-            <h1>Related Links</h1>
-            <ul>
-              <li><a href="https://ipm.ac.ir/" target="_blank">School of Computer Science, IPM</a></li>
-              <li><a href="http://www.isi.org.ir/" target="_blank">Informatics Society of Iran</a></li>
-              <li><a href="http://csj.isi.org.ir/" target="_blank">Computer Science Journal</a></li>
-            </ul>
-          </div>
-        
-          <!-- Quick Links & Visitor Counter -->
-          <div class="footer-column fade-in">
-            <h1>Quick Links</h1>
-            <ul>
-              <li><a href="#Important Dates">Important Dates</a></li>
-            </ul>
-        
-            <div class="visitor-box">
-              <h2><i class="fa-solid fa-eye"></i> Welcome! You're visitor number:</h2>
-              <div class="visitor-counter">
-                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
-              </div>
-            </div>
-          </div>
-        
+     <footer class="footer">
+      <div class="footer-container">
+      
+        <!-- Contact Info -->
+        <div class="footer-column fade-in">
+          <h1>Contacts</h1>
+          <ul>
+            <li>
+              <a href="https://wa.me/989100856079" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> +98 910 085 6079
+              </a>
+            </li>
+            <li>
+              <a href="mailto:dchpc@ipm.ir">
+                <i class="fa-solid fa-envelope"></i> dchpc@ipm.ir
+              </a>
+            </li>
+            <li>
+              <a href="mailto:dchpc2024@gmail.com">
+                <i class="fa-solid fa-envelope"></i> dchpc2024@gmail.com
+              </a>
+            </li>
+          </ul>
         </div>
-        
-        
-      </footer>
       
-      <!-- Font Awesome Icons -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        <!-- Related Links -->
+        <div class="footer-column fade-in">
+          <h1>Related Links</h1>
+          <ul>
+            <li><a href="https://ipm.ac.ir/" target="_blank">School of Computer Science, IPM</a></li>
+            <li><a href="http://www.isi.org.ir/" target="_blank">Informatics Society of Iran</a></li>
+            <li><a href="http://csj.isi.org.ir/" target="_blank">Computer Science Journal</a></li>
+          </ul>
+        </div>
       
-      <!-- Footer Style -->
-      <style>
-        .footer {
-          background-color: #111;
-          color: #f0f0f0;
-          padding: 50px 20px 30px;
-          font-family: 'Segoe UI', sans-serif;
-          overflow-x: hidden;
-        }
+        <!-- Quick Links & Visitor Counter -->
+        <div class="footer-column fade-in">
+          <h1>Quick Links</h1>
+          <ul>
+            <li><a href="#about" >Important Dates</a></li>
+          </ul>
       
+          <!-- <div class="visitor-box">
+            <h2><i class="fa-solid fa-eye"></i> </h2>
+            <div class="visitor-counter">
+              <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
+            </div>
+          </div> -->
+        </div>
+      
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center; background-color: #2980b9; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative;">
+        <div style="margin-right: 15px;">
+          <i style="color: white; font-size: 18px; font-weight: 500;">Welcome! You're visitor number:</i>
+        </div>
+        <div style="position: relative; top: -10px;">
+          <i style="color: #e74c3c; font-size: 22px; font-weight: bold;">
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
+          </i>
+        </div>
+      
+        <!-- دکمه جدید اضافه شده -->
+        <!-- <div style="position: absolute; bottom: -15px; display: flex; justify-content: center; align-items: center; background-color: #3498db; padding: 10px 20px; border-radius: 5px; font-size: 16px; color: white; cursor: pointer; box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3); transition: transform 0.3s ease;">
+          <button onclick="window.location.href='#';" style="background-color: transparent; border: none; color: white; font-weight: bold; cursor: pointer;">Click Me!</button>
+        </div>
+      </div> -->
+      
+      
+    </footer>
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Footer Style -->
+    <style>
+      .footer {
+        background-color: #111;
+        color: #f0f0f0;
+        padding: 50px 20px 30px;
+        font-family: 'Segoe UI', sans-serif;
+        overflow-x: hidden;
+      }
+    
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    
+      .footer-column {
+        flex: 1 1 300px;
+        margin: 20px;
+      }
+    
+      .footer-column h1 {
+        font-size: 22px;
+        color: #ffffff;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #444;
+        padding-bottom: 8px;
+      
+      }
+    
+      
+    
+      .footer-column ul {
+        list-style: none;
+        padding: 0;
+      }
+    
+      .footer-column li {
+        margin-bottom: 12px;
+        font-size: 15px;
+      }
+      .footer-column a:hover {
+color: #fff; /* رنگ متن در حالت هاور */
+transform: scale(1.05);
+transition: transform 0.3s ease, color 0.3s;
+}
+      .footer-column a:hover i {
+color: #3498db; /* رنگ آیکون در حالت هاور */
+}
+      .footer-column a i {
+color: #28d47c; /* رنگ سبز پیش‌فرض آیکون */
+transition: color 0.3s ease;
+}
+      .footer-column a:hover i {
+color: #3498db; /* رنگ آیکون در حالت هاور */
+}
+.footer-column a:hover {
+color: #fff; /* رنگ متن در حالت هاور */
+transform: scale(1.05);
+transition: transform 0.3s ease, color 0.3s;
+}
+      /* .footer-column i {
+        color: #28d47c;
+        font-size: 17px;
+      } */
+    
+      .footer-bottom {
+        text-align: center;
+        padding-top: 25px;
+        border-top: 1px solid #333;
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 40px;
+      }
+    
+      /* Visitor Box Style */
+      .visitor-box {
+        background: linear-gradient(to right, #ffffff, #f7f7f7);
+        color: #333;
+        border-radius: 18px;
+        padding: 30px;
+        margin-top: 25px;
+        text-align: center;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeInUp 0.8s ease-in-out;
+      }
+    
+      .visitor-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 45px rgba(0, 0, 0, 0.25);
+      }
+    
+      .visitor-box h2 {
+        color: #2c3e50;
+        font-size: 18px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+    
+      /* Fade-In Animation */
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+    
+      .fade-in:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+    
+      .fade-in:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+    
+      .fade-in:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+    
+      .footer-bottom.fade-in {
+        animation-delay: 0.8s;
+      }
+    
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    
+      /* Responsive */
+      @media (max-width: 768px) {
         .footer-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-      
-        .footer-column {
-          flex: 1 1 300px;
-          margin: 20px;
-        }
-      
-        .footer-column h1 {
-          font-size: 22px;
-          color: #ffffff;
-          margin-bottom: 15px;
-          border-bottom: 2px solid #444;
-          padding-bottom: 8px;
-          transition: color 0.3s ease, border-bottom 0.3s ease;
-        }
-      
-        .footer-column h1:hover {
-          color: #28d47c;
-          border-bottom: 2px solid #28d47c;
-        }
-      
-        .footer-column ul {
-          list-style: none;
-          padding: 0;
-        }
-      
-        .footer-column li {
-          margin-bottom: 12px;
-          font-size: 15px;
-        }
-      
-        .footer-column a {
-          color: #ccc;
-          text-decoration: none;
-          transition: color 0.3s;
-          display: inline-flex;
+          flex-direction: column;
           align-items: center;
-          gap: 8px;
         }
-      
-        .footer-column a:hover {
-          color: #fff;
-          transform: scale(1.05);
-          transition: transform 0.3s ease, color 0.3s;
-        }
-      
-        .footer-column i {
-          color: #28d47c;
-          font-size: 17px;
-        }
-      
-        .footer-bottom {
-          text-align: center;
-          padding-top: 25px;
-          border-top: 1px solid #333;
-          font-size: 14px;
-          color: #aaa;
-          margin-top: 40px;
-        }
-      
-        /* Visitor Box Style */
+    
+        .footer-column a i {
+color: #ccc; /* رنگ پیش‌فرض آیکون */
+transition: color 0.3s ease;
+}
         .visitor-box {
-          background: linear-gradient(to right, #ffffff, #f7f7f7);
-          color: #333;
-          border-radius: 18px;
-          padding: 30px;
-          margin-top: 25px;
-          text-align: center;
-          box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          animation: fadeInUp 0.8s ease-in-out;
+          width: 90%;
+          margin: 20px auto 0;
         }
-      
-        .visitor-box:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 16px 45px rgba(0, 0, 0, 0.25);
-        }
-      
-        .visitor-box h2 {
-          color: #2c3e50;
-          font-size: 18px;
-          margin-bottom: 12px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 10px;
-        }
-      
-        /* Fade-In Animation */
-        .fade-in {
-          opacity: 0;
-          animation: fadeIn 1s ease-in-out forwards;
-        }
-      
-        .fade-in:nth-child(1) {
-          animation-delay: 0.2s;
-        }
-      
-        .fade-in:nth-child(2) {
-          animation-delay: 0.4s;
-        }
-      
-        .fade-in:nth-child(3) {
-          animation-delay: 0.6s;
-        }
-      
-        .footer-bottom.fade-in {
-          animation-delay: 0.8s;
-        }
-      
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      
-        /* Responsive */
-        @media (max-width: 768px) {
-          .footer-container {
-            flex-direction: column;
-            align-items: center;
-          }
-      
-          .footer-column {
-            margin-bottom: 40px;
-            text-align: center;
-          }
-      
-          .visitor-box {
-            width: 90%;
-            margin: 20px auto 0;
-          }
-        }
-      </style>
+      }
+    </style>
+    
+    
       
       
 
@@ -1915,6 +1887,15 @@ margin-top: 10px; /* فاصله کم‌تر از بخش‌های قبلی */
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script>
+      document.getElementById("redirectButton2022").addEventListener("click", function() {
+        window.location.href = "2022.html"; // Redirects to 2022.html
+      });
+    </script>
+       <script>
+        document.getElementById("redirectButton2024").addEventListener("click", function() {
+          window.location.href = "2024.html"; // Redirects to 2022.html
+        });
+      </script> <script>
       document.getElementById("redirectButton2022").addEventListener("click", function() {
         window.location.href = "2022.html"; // Redirects to 2022.html
       });

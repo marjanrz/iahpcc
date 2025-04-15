@@ -102,73 +102,87 @@
       display: block;
     }
 
-  </style>
-							<div class="clear-toggle"></div>
+  </style><div class="clear-toggle"></div>
 							<div id="main-menu" class="collapse scroll navbar-right">
-								<ul class="nav">
-                                
-									<li class="active"> <a href="2022.html">Home</a> </li>
-                  <li class="active"> <a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a> </li>
-                  <li class="active"> <a href="keynote.html" target="_blank">keynote</a> </li> 
-                    <!-- <a href="/files/DCHPC2024.ppt" target="_blank"><li>Conference Poster</li></a> -->
-									
-                                    
-                                    
-                  <!-- <button onclick="window.location.href='committee.html'">committee</button> -->
+                <ul class="custom-navbar">
+  <li> <a href="/files/DCHPC2024.ppt" target="_blank">Conference Poster</a></li>
+   <li><a href="committee.html" onclick="navigateTo('committee.html')">Conference Chairs/Committees</a></li>
+  <li><a href="keynote.html" onclick="navigateTo('keynote.html')">Keynote Speakers</a></li>
+  
+   
+ 
+  <!-- History Dropdown Menu -->
+  <li class="history-dropdown">
+    <div class="history-toggle">History</div>
+    <div class="history-content"href="2024.html">
+   
+    <a href="index.html">  <button onclick="navigateTo('index.html')">DCHPC 2026</button></a> 
+     <a href="2024.html"> <button  onclick="navigateTo('2024.html')">DCHPC 2024</button></a> 
+    <a href="https://iahpc.ir/DCHPC2018">  <button href="https://iahpc.ir/DCHPC2018" target="_blank">DCHPC 2018</button></a> 
+    </div>
+  </li>
+<li><a href="conferencenews.html" onclick="navigateTo('conferencenews.html')">Conference News</a></li>
+ 
+<li><a href="index.html">FAQ</a></li>
+<li><a href="farsi.html" onclick="navigateTo('farsi.html')">فارسی</a></li>
+</ul>
 
-                                    
-                                    
-                                    
-                                   
-										
-								</ul>
-							</div><!-- end main-menu -->
-						</div>
-					</div>
-				</div>
+
+
+
+
 			</header>
     <!--End Navigation-->
 
-      
+   
+
         <!-- Start Slider  -->
         <section id="home" class="home">
-             <div class="slider-overlay"></div>
-            <div class="flexslider">
-                <ul class="slides scroll">
-                    <li class="first">
-                        <div class="slider-text-wrapper">  
-                            <div class="container">
-                               
-                                
-                                <!-- <a href="#works" class="middle btn btn-white">VIEW PORTFOLIO</a> -->
-                            </div>       
-                        </div>
-                        <img src="images/img-iahpc/5.jpg" alt="">
-                    </li>
-                    
-                    
-                 
-                </ul>
-            </div>
-        </section>
+  <div class="slider-backgroundd" style="background-image: url('./iahpcc/pexels.JPG');">
+    <div class="overlay-content">
+  <h1>
+   
+    DCHPC 2026
+  </h1>
+  <p>
+    The Third International Conference on Distributed Computing and High Performance Computing,<br>
+    10th–11th May 2026, Tehran, Iran.
+  </p>
+  <div class="hero-buttons">
+    <a href="index.html" class="hero-btn">Important Dates</a>
+    <a href="index.html" class="hero-btn secondary">Submit Paper</a>
+  </div>
+</div>
+
+  </div>
+</section><div class="sponsor-containerr">
+  <div style="height: 120px; width: 180px;">
+    <a href="http://www.isi.org.ir/" target="_blank">
+      <img src="images/imagess/images/logoos.jpg" alt="ISI Logo 2" />
+    </a>
+  </div>
+</div>
           <!-- End Slider  -->
           <section id="committee" style="padding: 60px 20px; background-color: #fff;">
-            <div style="text-align: center; margin-bottom: 40px;">
+            <div style="text-align: center; margin-bottom: 50px;">
               <h2 style="
-                font-size: 2.5rem;
-                font-weight: 700;
-                color: #2c3e50;
-                margin-bottom: 10px;
+                font-size: 3rem;
+                font-weight: 800;
+                color: #1a1a1a;
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+                margin-bottom: 15px;
               ">
-                Committee Council Members
+                🏛️ Committee council members
               </h2>
-              <div style="
-                width: 80px;
-                height: 4px;
-                background-color: #4a90e2;
+              <p style="
+                font-size: 1.1rem;
+                color: #666;
+                max-width: 700px;
                 margin: 0 auto;
-                border-radius: 5px;
-              "></div>
+              ">
+               
+              </p>
             </div>
           
             <div style="
@@ -213,24 +227,27 @@
             </div>
           </section>
           <section id="organization" style="padding: 60px 20px; background-color: #fff;">
-            <div style="text-align: center; margin-bottom: 40px;">
+            <div style="text-align: center; margin-bottom: 50px;">
               <h2 style="
-                font-size: 2.5rem;
-                font-weight: 700;
-                color: #2c3e50;
-                margin-bottom: 10px;
+                font-size: 3rem;
+                font-weight: 800;
+                color: #1a1a1a;
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+                margin-bottom: 15px;
               ">
-                Organization Committee Members
+                🏛️ Organization Committee Members
               </h2>
-              <div style="
-                width: 100px;
-                height: 4px;
-                background-color: #4a90e2;
+              <p style="
+                font-size: 1.1rem;
+                color: #666;
+                max-width: 700px;
                 margin: 0 auto;
-                border-radius: 5px;
-              "></div>
+              ">
+                <!-- توضیح دلخواهت رو می‌تونی اینجا بذاری -->
+              </p>
             </div>
-          
+            
             <div style="
               max-width: 900px;
               margin: 0 auto;
@@ -293,12 +310,19 @@
             </div>
           </section>
           <section id="scientific-committee" style="padding: 60px 20px; background-color: #fff;">
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h2 style="font-size: 2.5rem; font-weight: 700; color: #2c3e50; margin-bottom: 10px;">
-                    Scientific Committee Members
-                </h2>
-                <div style="width: 100px; height: 4px; background-color: #4a90e2; margin: 0 auto; border-radius: 5px;"></div>
+            <div style="text-align: center; margin-bottom: 50px;">
+              <h2 style="
+                font-size: 3rem;
+                font-weight: 800;
+                color: #1a1a1a;
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+                margin-bottom: 0;
+              ">
+                 🏛️Scientific Committee Members
+              </h2>
             </div>
+            
         
             <div style="max-width: 900px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);">
                 <ul style="padding-left: 0; list-style: none;">
@@ -390,21 +414,24 @@
         <section id="committee" style="padding: 60px 20px; background-color: #fff;">
           <div style="text-align: center; margin-bottom: 40px;">
             <h2 style="
-              font-size: 2.5rem;
-              font-weight: 700;
-              color: #2c3e50;
-              margin-bottom: 10px;
+              font-size: 3rem;
+              font-weight: 800;
+              color: #1a1a1a;
+              text-transform: capitalize;
+              letter-spacing: 1.5px;
+              margin-bottom: 15px;
             ">
-              Executive Committee
+             🏛️ Executive Committee
             </h2>
             <div style="
               width: 80px;
               height: 4px;
-              background-color: #4a90e2;
+             
               margin: 0 auto;
               border-radius: 5px;
             "></div>
           </div>
+          
         
           <div style="
             max-width: 900px;
@@ -415,7 +442,7 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
           ">
             <ol style="list-style-position: inside; padding-left: 0;">
-              <li style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.7; color: #333;">
+              <li style="margin-bottom: 15px;">
                 Hamidreza Shahrabi, Chair of Executive Committee.</li>
                 <li style="margin-bottom: 15px;">Mojtaba Kazemi, Coordination Co-Chair.</li>
                 <li style="margin-bottom: 15px;">Hossein Ahmadi NajafAbadi, Internal Publication Co-chair.</li>
@@ -478,18 +505,33 @@
                   <div class="footer-column fade-in">
                     <h1>Quick Links</h1>
                     <ul>
-                      <li><a href="#Important Dates">Important Dates</a></li>
+                      <li><a href="#about" >Important Dates</a></li>
                     </ul>
                 
-                    <div class="visitor-box">
-                      <h2><i class="fa-solid fa-eye"></i> Welcome! You're visitor number:</h2>
+                    <!-- <div class="visitor-box">
+                      <h2><i class="fa-solid fa-eye"></i> </h2>
                       <div class="visitor-counter">
                         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 
                 </div>
+                <div style="display: flex; justify-content: center; align-items: center; background-color: #2980b9; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative;">
+                  <div style="margin-right: 15px;">
+                    <i style="color: white; font-size: 18px; font-weight: 500;">Welcome! You're visitor number:</i>
+                  </div>
+                  <div style="position: relative; top: -10px;">
+                    <i style="color: #e74c3c; font-size: 22px; font-weight: bold;">
+                      <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
+                    </i>
+                  </div>
+                
+                  <!-- دکمه جدید اضافه شده -->
+                  <!-- <div style="position: absolute; bottom: -15px; display: flex; justify-content: center; align-items: center; background-color: #3498db; padding: 10px 20px; border-radius: 5px; font-size: 16px; color: white; cursor: pointer; box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3); transition: transform 0.3s ease;">
+                    <button onclick="window.location.href='#';" style="background-color: transparent; border: none; color: white; font-weight: bold; cursor: pointer;">Click Me!</button>
+                  </div>
+                </div> -->
                 
                 
               </footer>
@@ -526,13 +568,10 @@
                   margin-bottom: 15px;
                   border-bottom: 2px solid #444;
                   padding-bottom: 8px;
-                  transition: color 0.3s ease, border-bottom 0.3s ease;
+                
                 }
               
-                .footer-column h1:hover {
-                  color: #28d47c;
-                  border-bottom: 2px solid #28d47c;
-                }
+                
               
                 .footer-column ul {
                   list-style: none;
@@ -543,26 +582,30 @@
                   margin-bottom: 12px;
                   font-size: 15px;
                 }
-              
-                .footer-column a {
-                  color: #ccc;
-                  text-decoration: none;
-                  transition: color 0.3s;
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 8px;
-                }
-              
                 .footer-column a:hover {
-                  color: #fff;
-                  transform: scale(1.05);
-                  transition: transform 0.3s ease, color 0.3s;
-                }
-              
-                .footer-column i {
+          color: #fff; /* رنگ متن در حالت هاور */
+          transform: scale(1.05);
+          transition: transform 0.3s ease, color 0.3s;
+        }
+                .footer-column a:hover i {
+          color: #3498db; /* رنگ آیکون در حالت هاور */
+        }
+                .footer-column a i {
+          color: #28d47c; /* رنگ سبز پیش‌فرض آیکون */
+          transition: color 0.3s ease;
+        }
+                .footer-column a:hover i {
+          color: #3498db; /* رنگ آیکون در حالت هاور */
+        }
+        .footer-column a:hover {
+          color: #fff; /* رنگ متن در حالت هاور */
+          transform: scale(1.05);
+          transition: transform 0.3s ease, color 0.3s;
+        }
+                /* .footer-column i {
                   color: #28d47c;
                   font-size: 17px;
-                }
+                } */
               
                 .footer-bottom {
                   text-align: center;
@@ -635,11 +678,10 @@
                     align-items: center;
                   }
               
-                  .footer-column {
-                    margin-bottom: 40px;
-                    text-align: center;
-                  }
-              
+                  .footer-column a i {
+          color: #ccc; /* رنگ پیش‌فرض آیکون */
+          transition: color 0.3s ease;
+        }
                   .visitor-box {
                     width: 90%;
                     margin: 20px auto 0;
@@ -647,10 +689,6 @@
                 }
               </style>
               
-              
-              
-           <!--End Footer-->
-
    <a href="#" class="scrollup"> <i class="fa fa-chevron-up"> </i> </a>
 
     <!--Plugins-->
@@ -675,6 +713,21 @@
           window.location.href = "2024.html"; // Redirects to 2022.html
         });
       </script>
+       <script>
+        document.getElementById("redirectButton2024").addEventListener("click", function() {
+          window.location.href = "2024.html"; // Redirects to 2022.html
+        });
+      </script>
+       <script>
+        document.getElementById("redirectButton2022").addEventListener("click", function() {
+          window.location.href = "2022.html"; // Redirects to 2022.html
+        });
+      </script>
+         <script>
+          document.getElementById("redirectButton2024").addEventListener("click", function() {
+            window.location.href = "2024.html"; // Redirects to 2022.html
+          });
+        </script>
        <!-- <script>
         // JavaScript to handle redirection
         document.getElementById("redirectButton1").addEventListener("click", function() {

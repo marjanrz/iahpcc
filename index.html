@@ -127,13 +127,13 @@
     <div class="history-content">
       <button onclick="navigateTo('2024.html')">DCHPC 2024</button>
       <button onclick="navigateTo('2022.html')">DCHPC 2022</button>
-      <a href="https://iahpc.ir/DCHPC2018" target="_blank">DCHPC 2018</a>
+      <button href="https://iahpc.ir/DCHPC2018" target="_blank">DCHPC 2018</button>
     </div>
   </li>
 <li><a href="#" onclick="navigateTo('conferencenews.html')">Conference News</a></li>
+ 
+    <li><a href="#FAQ">FAQ</a></li>
   <li><a href="#" onclick="navigateTo('farsi.html')">فارسی</a></li>
-   
-  <li><a href="#FAQ">FAQ</a></li>
 </ul>
 
 
@@ -146,165 +146,170 @@
 
         <!-- Start Slider  -->
         <section id="home" class="home">
-  <div class="slider-backgroundd" style="background-image: url('./iahpcc/background1.png');">
+  <div class="slider-backgroundd" style="background-image: url('./iahpcc/pexels.JPG');">
     <div class="overlay-content">
-      <h1>DCHPC 2024</h1>
-      <p>
-        The Third International Conference on Distributed Computing and High Performance Computing,<br>
-        14th–15th May 2024, Tehran, Iran.
-      </p>
-      <div class="hero-buttons">
-        <a href="#register" class="hero-btn">Register Now</a>
-        <a href="#program" class="hero-btn secondary">View Program</a>
-      </div>
-    </div>
+  <h1>
+    <!-- آیکون تایمر قبل از تیتر -->
+    <a href="#timer" style="text-decoration: none; color: inherit; margin-right: 10px;">
+      <i class="fa-solid fa-hourglass-start" style="font-size: 30px; color: #dcb952; position: relative; top: -8px;"></i>
+    </a>
+    DCHPC 2026
+  </h1>
+  <p>
+    The Third International Conference on Distributed Computing and High Performance Computing,<br>
+    10th–11th May 2026, Tehran, Iran.
+  </p>
+  <div class="hero-buttons">
+    <a href="#about" class="hero-btn">Important Dates</a>
+    <a href="#paper" class="hero-btn secondary">Submit Paper</a>
+  </div>
+</div>
+
   </div>
 </section>
-
- <div class="sponsor-containerr">
-    <div class="sponsor-card">
-      <a href="http://www.isi.org.ir/" target="_blank">
-        <img src="images/imagess/images/logo2.png" alt="ISI Logo 2" />
-      </a>
-    </div>
-    <div class="sponsor-card">
-      <a href="http://www.isi.org.ir/" target="_blank">
-        <img src="images/img/IPMLogo.jpg" alt="IPM Sponsor" />
-      </a>
-    </div>
-    <div class="sponsor-card">
-      <a href="https://www.isi.org.ir/front/posts/show/832/" target="_blank">
-        <img src="images/imagess/images/logo.png" alt="ISI Sponsor" />
-      </a>
-    </div>
+<div class="sponsor-containerr">
+  <div style="height: 120px; width: 180px;">
+    <a href="http://www.isi.org.ir/" target="_blank">
+      <img src="images/imagess/images/logoos.jpg" alt="ISI Logo 2" />
+    </a>
   </div>
+</div>
+
+
+
           <!-- End Slider  -->
 
           <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
 <section id="about" class="important-dates-section">
-  <div class="container">
-    <div class="important-dates-wrapper">
-      <div class="title-box">
-        <i class="fas fa-calendar-alt"></i>
-        <h2 class="animated-title">Important Dates (Final Extension)</h2>
-      </div>
-      
-      <div class="dates-box">
-        <p>
-          <span class="date-title">Conference Date:</span> 14<sup>th</sup>-15<sup>th</sup> May 2024<br />
-          <span class="date-title">Submission Date (Start):</span> 22<sup>nd</sup> June 2023<br />
-          <span class="date-title">Submission Date:</span> 
-          <span class="strike-box">
-            <strike>22<sup>nd</sup> November</strike>
-          </span> 
-          → 15<sup>th</sup> December 2023<br />
-          
-          <span class="date-title">Acceptance Notification:</span> 
-          <span class="strike-box">
-            <strike>15<sup>th</sup> January 2024</strike>
-          </span> 
-          → <span class="highlight">22<sup>nd</sup> January 2024</span><br />
+  <style>
+    .important-dates-section {
+      padding: 60px 20px;
+      background-color: #fff;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
 
-          <span class="date-title">Early Bird Registration:</span> 21<sup>st</sup> January 2024<br />
-          <span class="date-title">Regular Registration (Deadline):</span> 9<sup>th</sup> February 2024<br />
-          <span class="date-title">Camera Ready Due Date:</span> 9<sup>th</sup> February 2024
-        </p>
+    .important-dates-section .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .important-dates-section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #222;
+      font-weight: bold;
+      position: relative;
+      animation: fadeIn 1s ease-in-out;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .important-dates-section h2:hover {
+      color: #0066cc;
+      transform: translateY(-5px);
+    }
+
+    .important-dates-section .dates-box {
+      display: grid;
+      gap: 20px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .date-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 12px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .date-row:hover {
+      background-color: #f5faff;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
+    }
+
+    .date-title {
+      font-weight: 600;
+      color: #555;
+    }
+
+    .updated-date {
+      color: #0066cc;
+      font-weight: 500;
+    }
+
+    del {
+      color: #999;
+      margin-right: 8px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .date-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <h2>Important Dates <span style="color: #e53935; font-size: 16px;">(Final Extension)</span></h2>
+
+    <div class="dates-box">
+      <div class="date-row">
+        <span class="date-title">Conference Date:</span>
+        <span>14<sup>th</sup>–15<sup>th</sup> May 2024</span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Submission Start:</span>
+        <span>22<sup>nd</sup> June 2023</span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Submission Deadline:</span>
+        <span>
+          <del>22<sup>nd</sup> November</del>
+          <span class="updated-date">15<sup>th</sup> December 2023</span>
+        </span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Acceptance Notification:</span>
+        <span>
+          <del>15<sup>th</sup> Jan 2024</del>
+          <span class="updated-date">22<sup>nd</sup> January 2024</span>
+        </span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Early Bird Registration:</span>
+        <span>21<sup>st</sup> January 2024</span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Regular Registration Deadline:</span>
+        <span>9<sup>th</sup> February 2024</span>
+      </div>
+
+      <div class="date-row">
+        <span class="date-title">Camera Ready Due:</span>
+        <span>9<sup>th</sup> February 2024</span>
       </div>
     </div>
   </div>
 </section>
 
-<style>
-  .important-dates-section {
-  padding: 60px 20px;
-  background: #f0f2f5;
-  font-family: 'Poppins', sans-serif;
-}
-
-.important-dates-wrapper {
-  max-width: 900px; /* تغییر به مقدار مشابه */
-  margin: 0 auto;
-  padding: 40px;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-
-
-.title-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 30px;
-}
-
-.title-box i {
-  font-size: 26px;
-  color: #007bff;
-}
-
-.animated-title {
-  font-size: 28px;
-  color: #2c3e50;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-.dates-box {
-  padding: 25px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-}
-
-.dates-box p {
-  font-size: 16px;
-  line-height: 1.9;
-  color: #333;
-}
-
-.highlight {
-  color: #007bff;
-  font-weight: 500;
-}
-
-.date-title {
-  font-weight: 600;
-  color: #2c3e50;
-}
-
-.strike-box {
-  display: inline-block;
-  padding: 2px 8px;
-  background: #f1f1f1;
-  color: #999;
-  font-style: italic;
-  border-radius: 6px;
-  font-size: 15px;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
-.strike-box strike {
-  text-decoration: line-through;
-  color: #999;
-  opacity: 0.7;
-}
-
-@media (max-width: 600px) {
-  .animated-title {
-    font-size: 22px;
-  }
-
-  .dates-box {
-    padding: 20px;
-  }
-}
-
-</style>
 
 
 
@@ -320,152 +325,138 @@
   <!--End Facts-->
 
   <!-- Font Awesome CDN for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-<section class="conference-topics-section">
-  <div class="container">
-    <div class="title-wrapper">
-      <i class="fas fa-bullseye"></i>
-      <h2 class="animated-title">Conference Topics</h2>
+  <section class="conference-topics-section">
+    <div class="container">
+      <div class="title-wrapper no-hover">
+        <h2 class="animated-title">Conference Topics</h2>
+      </div>
+      
+      <p>Topics of interest include, but are not limited to:</p>
+  
+      <ul class="topics">
+        <li>High Performance Computing</li>
+        <li>Distributed Computing</li>
+        <li>Cloud Computing</li>
+        <li>Grid Computing</li>
+        <li>Internet of Things</li>
+        <li>Evolutionary Computing, Meta-Heuristics and Neural Networks</li>
+        <li>Fog Computing</li>
+        <li>Edge Computing</li>
+        <li>Scheduling</li>
+        <li>Parallel Algorithms</li>
+        <li>Parallel Processing</li>
+        <li>Applications of Parallel/Distributed Computing</li>
+        <li>Industrial Internet of Things</li>
+        <li>Security of Distributed Computing</li>
+        <li>Tools and Environments for Parallel/Distributed</li>
+        <li>Performance Analysis</li>
+        <li>Pervasive Computing</li>
+        <li>Ubiquitous Computing</li>
+        <li>Information Science</li>
+        <li>Big Data</li>
+        <li>Data Science</li>
+        <li>Graph Theory and Routing</li>
+        <li>Block-Chain</li>
+        <li>Virtualization Technology</li>
+        <li>Container and Container Orchestration</li>
+        <li>Networking and Network Science</li>
+        <li>Distributed and Parallel Storage /Database Systems</li>
+        <li>Microservices</li>
+        <li>Software-defined Network</li>
+      </ul>
     </div>
-    
-    <p>Topics of interest include, but are not limited to:</p>
-
-    <ul class="topics">
-      <li>High Performance Computing</li>
-      <li>Distributed Computing</li>
-      <li>Cloud Computing</li>
-      <li>Grid Computing</li>
-      <li>Internet of Things</li>
-      <li>Evolutionary Computing, Meta-Heuristics and Neural Networks</li>
-      <li>Fog Computing</li>
-      <li>Edge Computing</li>
-      <li>Scheduling</li>
-      <li>Parallel Algorithms</li>
-      <li>Parallel Processing</li>
-      <li>Applications of Parallel/Distributed Computing</li>
-      <li>Industrial Internet of Things</li>
-      <li>Security of Distributed Computing</li>
-      <li>Tools and Environments for Parallel/Distributed</li>
-      <li>Performance Analysis</li>
-      <li>Pervasive Computing</li>
-      <li>Ubiquitous Computing</li>
-      <li>Information Science</li>
-      <li>Big Data</li>
-      <li>Data Science</li>
-      <li>Graph Theory and Routing</li>
-      <li>Block-Chain</li>
-      <li>Virtualization Technology</li>
-      <li>Container and Container Orchestration</li>
-      <li>Networking and Network Science</li>
-      <li>Distributed and Parallel Storage /Database Systems</li>
-      <li>Microservices</li>
-      <li>Software-defined Network</li>
-    </ul>
-  </div>
-</section>
-
-<style>
- .conference-topics-section {
-  padding: 60px 20px;
-  background: #f5f7fa;
-  font-family: 'Poppins', sans-serif;
-}
-
-.conference-topics-section .container {
-  max-width: 900px; /* تغییر به مقدار مشابه */
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 40px 50px;
-  border-radius: 15px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-}
-
-
-.title-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 30px;
-  transition: all 0.3s ease-in-out;
-}
-
-.title-wrapper:hover {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-  transform: translateY(-3px);
-  background: #f0faff;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.title-wrapper i {
-  font-size: 26px;
-  color: #3498db;
-  transition: all 0.3s ease;
-}
-
-.animated-title {
-  color: #2c3e50;
-  font-size: 28px;
-  text-transform: capitalize;
-  transition: all 0.3s ease-in-out;
-}
-
-.conference-topics-section p {
-  font-size: 16px;
-  margin-bottom: 25px;
-  color: #555;
-  text-align: left;
-  text-transform: capitalize;
-}
-
-.topics {
-  list-style-type: disc;
-  text-align: left;
-  columns: 2;
-  column-gap: 40px;
-  padding-left: 20px;
-  animation: fadeIn 0.8s ease-in-out;
-}
-
-.topics li {
-  margin-bottom: 10px;
-  font-size: 15px;
-  position: relative;
-  transition: all 0.3s ease;
-  text-transform: capitalize;
-  padding-left: 5px;
-}
-
-.topics li:hover {
-  color: #2c3e50;
-  transform: translateX(5px);
-  font-weight: 500;
-}
-
-@media (max-width: 600px) {
-  .topics {
-    columns: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-</style>
-
-
-
-  <section id="factss" class="section parallax">
+  </section>
+  
+  <style>
+    .conference-topics-section {
+      padding: 60px 20px;
+      background: #f5f7fa;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .conference-topics-section .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+  
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  
+    .animated-title {
+      color: #2c3e50;
+      font-size: 28px;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin: 0;
+      position: relative;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .animated-title:hover {
+      color: #0066cc;
+      transform: translateY(-5px);
+    }
+  
+    .conference-topics-section p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #555;
+      text-align: left;
+      text-transform: capitalize;
+    }
+  
+    .topics {
+      list-style-type: disc;
+      text-align: left;
+      columns: 2;
+      column-gap: 40px;
+      padding-left: 20px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+  
+    .topics li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      position: relative;
+      transition: all 0.3s ease;
+      text-transform: capitalize;
+      padding-left: 5px;
+    }
+  
+    .topics li:hover {
+      color: #0066cc;
+      transform: translateX(5px);
+      font-weight: 500;
+    }
+  
+    @media (max-width: 600px) {
+      .topics {
+        columns: 1;
+      }
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  
+  </style>
+   <section id="facts" class="section parallax">
     <div ></div>
        <div class="container">
            <div class="row">
@@ -500,155 +491,149 @@
             <div class="tab-arrow">
             </div>
           </li> -->
-         <!-- Font Awesome CDN (Only once in your project) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-<section class="paper-submission">
-  <div >
-    <!-- Title with Icon -->
-    <h2 class="animated-title">
-      <i class="fas fa-file-alt"></i> Paper Submission
-    </h2>
-    
-    <p>
-      Authors are invited to submit full-length papers to DCHPC2024 through the online paper submission system by the submission deadline. Submission implies that the paper is original and unpublished (<a href="https://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank">IEEE code of ethics</a>).
-    </p>
-    
-    <p>
-      A complete paper must be prepared using the IEEE template (available for <a href="#">MS Word</a> or <a href="#">LaTeX</a>) and follow the blind-submission review format.
-    </p>
-    
-    <p class="note">
-      Note: The DCHPC2024 review process is double-blind. Authors do not know the reviewers’ identities, and reviewers do not know the names of the authors.
-    </p>
-    
-    <p>
-      Please avoid including any author-identifying information in the acknowledgments or supplemental materials. Also avoid linking to websites that may reveal the authors’ identity.
-    </p>
-    
-    <p>
-      Papers must be submitted electronically in PDF format via the <a href="#">submission portal</a>.
-    </p>
-    
-    <p>
-      For enquiries, contact: <strong>dchpc2024@gmail.com</strong> or <strong style="color:#27ae60;">+989100856079</strong> <span style="font-style: italic;">(SMS or WhatsApp)</span>.
-    </p>
-  </div>
-
-
-<!-- CSS styles -->
-<style>
-/* استایل کلی برای بخش Paper Submission */
-.paper-submission {
-  padding: 60px 20px;
-  background: #f5f7fa;
-  font-family: 'Poppins', sans-serif;
-}
-
-.paper-submission .container {
-  max-width: 1200px; /* تغییر عرض به 1200px برای هماهنگی بهتر */
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 40px 50px;
-  border-radius: 15px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* سایه مشابه با سایر بخش‌ها */
-  transition: all 0.3s ease; /* برای انیمیشن هنگام تغییر اندازه */
-}
-
-/* استایل عنوان با آیکون */
-.animated-title {
-  text-align: center;
-  color: #2c3e50;
-  font-size: 28px;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  border-bottom: 2px solid #3498db;
-  display: inline-block;
-  padding-bottom: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-/* تغییرات آیکون */
-.animated-title i {
-  margin-right: 10px;
-  color: #2980b9;
-}
-
-/* تغییرات هنگام هاور روی عنوان */
-.animated-title:hover {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-3px);
-  background: #f0faff;
-  border-radius: 6px;
-  padding: 10px 20px;
-}
-
-/* استایل پاراگراف‌ها */
-.paper-submission p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #333;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-/* لینک‌ها */
-.paper-submission a {
-  color: #2980b9;
-  text-decoration: none;
-}
-
-.paper-submission a:hover {
-  text-decoration: underline;
-}
-
-/* استایل برای یادداشت */
-.paper-submission .note {
-  color: #c0392b;
-  font-weight: bold;
-  background-color: #fceae8;
-  padding: 15px;
-  border-left: 5px solid #e74c3c;
-  border-radius: 8px;
-  transition: all 0.4s ease;
-}
-
-/* تغییرات هنگام هاور روی یادداشت */
-.paper-submission .note:hover {
-  background-color: #f8d7da;
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
-}
-
-/* ریسپانسیو برای اندازه‌های کوچکتر */
-@media (max-width: 768px) {
-  .paper-submission .container {
-    padding: 30px 20px; /* کاهش پدینگ برای دستگاه‌های موبایل */
-  }
-
-  .animated-title {
-    font-size: 24px; /* تغییر اندازه فونت عنوان */
-  }
-
-  .paper-submission p {
-    font-size: 14px; /* کاهش اندازه فونت پاراگراف‌ها */
-  }
-}
-
-@media (max-width: 480px) {
-  .paper-submission .container {
-    padding: 20px 15px; /* کاهش پدینگ بیشتر */
-  }
-
-  .animated-title {
-    font-size: 20px; /* تغییر اندازه فونت بیشتر */
-  }
-
-  .paper-submission p {
-    font-size: 12px; /* تغییر اندازه فونت برای دستگاه‌های کوچک */
-  }
-}
+          <section id="paper" class="paper-submission">
+            <div>
+              <!-- Title without Icon -->
+              <h2 class="animated-title">
+                Paper Submission
+              </h2>
+              
+              <p>
+                Authors are invited to submit full-length papers to DCHPC2024 through the online paper submission system by the submission deadline. Submission implies that the paper is original and unpublished (<a href="https://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank">IEEE code of ethics</a>).
+              </p>
+              
+              <p>
+                A complete paper must be prepared using the IEEE template (available for <a href="#">MS Word</a> or <a href="#">LaTeX</a>) and follow the blind-submission review format.
+              </p>
+              
+              <p class="note">
+                Note: The DCHPC2024 review process is double-blind. Authors do not know the reviewers’ identities, and reviewers do not know the names of the authors.
+              </p>
+              
+              <p>
+                Please avoid including any author-identifying information in the acknowledgments or supplemental materials. Also avoid linking to websites that may reveal the authors’ identity.
+              </p>
+              
+              <p>
+                Papers must be submitted electronically in PDF format via the <a href="#">submission portal</a>.
+              </p>
+              
+              <p>
+                For enquiries, contact: <strong>dchpc2024@gmail.com</strong> or <strong style="color:#27ae60;">+989100856079</strong> <span style="font-style: italic;">(SMS or WhatsApp)</span>.
+              </p>
+            </div>
+          </section>
+          
+          <!-- CSS styles -->
+          <style>
+          /* استایل کلی برای بخش Paper Submission */
+          .paper-submission {
+            padding: 60px 20px;
+            background: #f5f7fa;
+            font-family: 'Poppins', sans-serif;
+            width: 1100px;
+          }
+          
+          .paper-submission .container {
+            max-width: 1200px; /* تغییر عرض به 1200px برای هماهنگی بهتر */
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* سایه مشابه با سایر بخش‌ها */
+            transition: all 0.3s ease; /* برای انیمیشن هنگام تغییر اندازه */
+          }
+          
+          /* استایل عنوان بدون آیکون */
+          .animated-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            padding-bottom: 10px;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          /* تغییرات هنگام هاور روی عنوان */
+          .animated-title:hover {
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            background: #f0faff;
+            border-radius: 6px;
+            padding: 10px 20px;
+          }
+          
+          /* استایل پاراگراف‌ها */
+          .paper-submission p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          /* لینک‌ها */
+          .paper-submission a {
+            color: #2980b9;
+            text-decoration: none;
+          }
+          
+          .paper-submission a:hover {
+            text-decoration: underline;
+          }
+          
+          /* استایل برای یادداشت */
+          .paper-submission .note {
+            color: #c0392b;
+            font-weight: bold;
+            background-color: #fceae8;
+            padding: 15px;
+            border-left: 5px solid #e74c3c;
+            border-radius: 8px;
+            transition: all 0.4s ease;
+          }
+          
+          /* تغییرات هنگام هاور روی یادداشت */
+          .paper-submission .note:hover {
+            background-color: #f8d7da;
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+          }
+          
+          /* ریسپانسیو برای اندازه‌های کوچکتر */
+          @media (max-width: 768px) {
+            .paper-submission .container {
+              padding: 30px 20px; /* کاهش پدینگ برای دستگاه‌های موبایل */
+            }
+          
+            .animated-title {
+              font-size: 24px; /* تغییر اندازه فونت عنوان */
+            }
+          
+            .paper-submission p {
+              font-size: 14px; /* کاهش اندازه فونت پاراگراف‌ها */
+            }
+          }
+          
+          @media (max-width: 480px) {
+            .paper-submission .container {
+              padding: 20px 15px; /* کاهش پدینگ بیشتر */
+            }
+          
+            .animated-title {
+              font-size: 20px; /* تغییر اندازه فونت بیشتر */
+            }
+          
+            .paper-submission p {
+              font-size: 12px; /* تغییر اندازه فونت برای دستگاه‌های کوچک */
+            }
+          }
+          
+          
 
 </style>
 
@@ -667,7 +652,7 @@
       <ul class="timeline">
         
         <li class="year">
-          <a href="https://iahpc.ir/DCHPC2018" target="_blank">2018</a>
+          <a  class="year">2018</a>
         </li>
         <li class="timeline-item timeline-right">
           <h4>About DCHPC2018:</h4>
@@ -744,7 +729,7 @@
               
              </div>
 			
-             <section  id="skills" class="section parallax" style="background-image: url('./iahpcc/Registration.jpg');">
+             <section  id="skills" class="section parallax" style="background-image: url('./iahpcc/table.jpg');">
            
             
                   <div class="row">
@@ -1067,7 +1052,7 @@ h1.section-title + ul {
   <!--Start Services-->
   <section class="custom-workshops-section">
     <div class="custom-container">
-      <h2 class="custom-title">🔬 Workshop</h2>
+      <h2 class="custom-title"> Workshop</h2>
   
 
       <div class="custom-cards">
@@ -1110,7 +1095,7 @@ h1.section-title + ul {
 
   
   <!--End Services-->
-  <section class="location-section" style="background-image: url('./iahpcc/Location.png');">
+  <section class="location-section" style="background-image: url('./iahpcc/parisa.jpg');">
     <div class="container">
       <div class="section-title-wrapper">
         <h2 class="section-title">Location</h2>
@@ -1153,7 +1138,7 @@ h1.section-title + ul {
     }
   
     .container {
-      max-width: 900px;
+      /* max-width: 900px; */
       margin: 0 auto;
     }
   
@@ -1161,7 +1146,7 @@ h1.section-title + ul {
       text-align: center;
       font-size: 36px;
       margin-bottom: 50px;
-      color: #e6a013;
+      color: #2980b9;
       border-bottom: 2px solid #3a2f1c;
       display: inline-block;
       padding-bottom: 10px;
@@ -1210,8 +1195,8 @@ h1.section-title + ul {
 .section-title {
   text-align: center;
   font-size: 36px;
-  color: #fff;
-  background-color: rgba(230, 160, 19, 0.85);
+  color: #140808;
+  background-color: rgba(208, 206, 202, 0.85);
   padding: 20px 40px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -1221,7 +1206,7 @@ h1.section-title + ul {
 }
 
 .section-title:hover {
-  background-color: rgba(255, 193, 67, 0.95);
+  background-color:#2980b9;
   color: #3a2f1c;
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
@@ -1358,7 +1343,7 @@ h1.section-title + ul {
       
       <!-- FAQ SECTION -->
       <section id="FAQ">
-        <div class="accordion-container">
+        <div class="accordion-container" style="background: #ffffff;">
           <h2>Frequently Asked Questions</h2>
       
           <!-- Panels -->
@@ -1451,51 +1436,49 @@ h1.section-title + ul {
       
       
         
-      
-      <section style="background-color: #f7f7f7; padding: 60px 20px;">
+      <section id="timer" style="background-color: #ffffff; padding: 60px 20px;">
         <div style="
           max-width: 700px;
           margin: auto;
-          background: #ffffff;
+          background: rgba(255, 255, 255, 0.85); /* سفید شفاف */
           border-radius: 20px;
           padding: 50px 40px;
           box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
           text-align: center;
           font-family: 'Segoe UI', sans-serif;
           border: 1px solid #e0e0e0;
-          background: linear-gradient(135deg, #6a11cb, #2575fc);
-          color: #fff;
+          color: #000; /* متن مشکی */
           position: relative;
-          top: -40px; /* حرکت تایمر به بالا */
+          top: -40px;
         ">
-          <h1 style="font-size: 2.8rem; margin-bottom: 30px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase;">Countdown to Event</h1>
+          <h1 style="font-size: 2.5rem; margin-bottom: 30px; font-weight: bold; letter-spacing: 2px;">Countdown to Event</h1>
           <div id="countdown" style="
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: bold;
-            letter-spacing: 2px;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
             align-items: center;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5); /* نوار شفاف داخل */
             border-radius: 15px;
+            border: 1px solid #ccc;
           ">
             <div class="time-block">
-              <div id="days" style="font-size: 3rem; color: #ffeb3b;"></div>
-              <div style="color: #fff; font-size: 1.2rem;">Days</div>
+              <div id="days" class="time-value"></div>
+              <div class="time-label">Days</div>
             </div>
             <div class="time-block">
-              <div id="hours" style="font-size: 3rem; color: #ffeb3b;"></div>
-              <div style="color: #fff; font-size: 1.2rem;">Hours</div>
+              <div id="hours" class="time-value"></div>
+              <div class="time-label">Hours</div>
             </div>
             <div class="time-block">
-              <div id="minutes" style="font-size: 3rem; color: #ffeb3b;"></div>
-              <div style="color: #fff; font-size: 1.2rem;">Minutes</div>
+              <div id="minutes" class="time-value"></div>
+              <div class="time-label">Minutes</div>
             </div>
             <div class="time-block">
-              <div id="seconds" style="font-size: 3rem; color: #ffeb3b;"></div>
-              <div style="color: #fff; font-size: 1.2rem;">Seconds</div>
+              <div id="seconds" class="time-value"></div>
+              <div class="time-label" >Seconds</div>
             </div>
           </div>
         </div>
@@ -1514,7 +1497,7 @@ h1.section-title + ul {
           const distance = targetDate - now;
       
           if (distance <= 0) {
-            countdownElement.innerHTML = "The event has started!";
+            countdownElement.innerHTML = "<h2>The event has started!</h2>";
             clearInterval(timerInterval);
             return;
           }
@@ -1533,6 +1516,31 @@ h1.section-title + ul {
         const timerInterval = setInterval(updateCountdown, 1000);
         updateCountdown();
       </script>
+      
+      <style>
+        .time-block {
+          text-align: center;
+        }
+      
+        .time-value {
+          font-size: 2.8rem;
+          font-weight: bold;
+          color: #000;
+        }
+      
+        .time-label {
+          font-size: 1.2rem;
+          color: #444;
+          margin-top: 5px;
+        }
+      
+        @media (max-width: 600px) {
+          #countdown {
+            flex-direction: column;
+            gap: 15px;
+          }
+        }
+      </style>
       
 
       
@@ -1579,18 +1587,33 @@ h1.section-title + ul {
           <div class="footer-column fade-in">
             <h1>Quick Links</h1>
             <ul>
-              <li><a href="#Important Dates">Important Dates</a></li>
+              <li><a href="#about" >Important Dates</a></li>
             </ul>
         
-            <div class="visitor-box">
-              <h2><i class="fa-solid fa-eye"></i> Welcome! You're visitor number:</h2>
+            <!-- <div class="visitor-box">
+              <h2><i class="fa-solid fa-eye"></i> </h2>
               <div class="visitor-counter">
                 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
               </div>
-            </div>
+            </div> -->
           </div>
         
         </div>
+        <div style="display: flex; justify-content: center; align-items: center; background-color: #2980b9; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative;">
+          <div style="margin-right: 15px;">
+            <i style="color: white; font-size: 18px; font-weight: 500;">Welcome! You're visitor number:</i>
+          </div>
+          <div style="position: relative; top: -10px;">
+            <i style="color: #e74c3c; font-size: 22px; font-weight: bold;">
+              <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1043797/t/3"></script>
+            </i>
+          </div>
+        
+          <!-- دکمه جدید اضافه شده -->
+          <!-- <div style="position: absolute; bottom: -15px; display: flex; justify-content: center; align-items: center; background-color: #3498db; padding: 10px 20px; border-radius: 5px; font-size: 16px; color: white; cursor: pointer; box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3); transition: transform 0.3s ease;">
+            <button onclick="window.location.href='#';" style="background-color: transparent; border: none; color: white; font-weight: bold; cursor: pointer;">Click Me!</button>
+          </div>
+        </div> -->
         
         
       </footer>
@@ -1627,13 +1650,10 @@ h1.section-title + ul {
           margin-bottom: 15px;
           border-bottom: 2px solid #444;
           padding-bottom: 8px;
-          transition: color 0.3s ease, border-bottom 0.3s ease;
+        
         }
       
-        .footer-column h1:hover {
-          color: #28d47c;
-          border-bottom: 2px solid #28d47c;
-        }
+        
       
         .footer-column ul {
           list-style: none;
@@ -1644,26 +1664,30 @@ h1.section-title + ul {
           margin-bottom: 12px;
           font-size: 15px;
         }
-      
-        .footer-column a {
-          color: #ccc;
-          text-decoration: none;
-          transition: color 0.3s;
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-        }
-      
         .footer-column a:hover {
-          color: #fff;
-          transform: scale(1.05);
-          transition: transform 0.3s ease, color 0.3s;
-        }
-      
-        .footer-column i {
+  color: #fff; /* رنگ متن در حالت هاور */
+  transform: scale(1.05);
+  transition: transform 0.3s ease, color 0.3s;
+}
+        .footer-column a:hover i {
+  color: #3498db; /* رنگ آیکون در حالت هاور */
+}
+        .footer-column a i {
+  color: #28d47c; /* رنگ سبز پیش‌فرض آیکون */
+  transition: color 0.3s ease;
+}
+        .footer-column a:hover i {
+  color: #3498db; /* رنگ آیکون در حالت هاور */
+}
+.footer-column a:hover {
+  color: #fff; /* رنگ متن در حالت هاور */
+  transform: scale(1.05);
+  transition: transform 0.3s ease, color 0.3s;
+}
+        /* .footer-column i {
           color: #28d47c;
           font-size: 17px;
-        }
+        } */
       
         .footer-bottom {
           text-align: center;
@@ -1736,11 +1760,10 @@ h1.section-title + ul {
             align-items: center;
           }
       
-          .footer-column {
-            margin-bottom: 40px;
-            text-align: center;
-          }
-      
+          .footer-column a i {
+  color: #ccc; /* رنگ پیش‌فرض آیکون */
+  transition: color 0.3s ease;
+}
           .visitor-box {
             width: 90%;
             margin: 20px auto 0;
